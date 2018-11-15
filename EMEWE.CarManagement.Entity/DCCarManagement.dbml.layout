@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 45, 58.5" name="DCCarManagement">
+  <DataContextMoniker Name="/DCCarManagementDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4f2178be-9593-4b04-8af6-bf305f1c6d17" absoluteBounds="0.75, 0.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/DCCarManagementDataContext/AssociateType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1f5eb0f-759a-4035-a6e0-afca79a366c6" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7116803b-e1f7-4ff1-bffe-2c17ea9f4bd6" absoluteBounds="3.75, 0.75, 2, 3.0997033691406251">
+      <DataClassMoniker Name="/DCCarManagementDataContext/WeighStrategyRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="edabfb8a-376f-4f39-bc78-35c566ffbbe3" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c87696f2-9116-490f-891d-e46e4a97b777" absoluteBounds="0.75, 4.75, 2, 2.5266442871093746">
+      <DataClassMoniker Name="/DCCarManagementDataContext/Backuppath" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7c0d91c-e93b-412a-906c-40e8ea23b834" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3094d9dc-833e-415c-a13d-ba787ff98a0b" absoluteBounds="3.75, 4.75, 2, 1.7625655110677077">
+      <DataClassMoniker Name="/DCCarManagementDataContext/BaseTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7786ab53-7f52-4a3e-9355-54790ced842f" absoluteBounds="3.765, 5.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="87c12912-3bc0-45ae-a089-f923f282f18b" absoluteBounds="6.75, 0.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/Blacklist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a53ceb3-1110-438e-82ab-702481ffc21a" absoluteBounds="6.765, 1.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc103c8a-9903-4058-adc0-dc744a28624e" absoluteBounds="6.75, 4.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/BlackRelations" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8482eacd-e854-4945-9b0e-7b990a9bcd48" absoluteBounds="6.765, 5.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="582bfd02-f353-4772-9dc6-6a35fe3030f2" absoluteBounds="0.75, 8.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/BusinessRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ee0692c-ca16-4fa7-adc2-5a37006a4d5a" absoluteBounds="0.765, 9.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3525c8a1-66c8-4598-ae92-3da78661bd04" absoluteBounds="3.75, 8.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/BusinessType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d44ccfd-a3f6-4244-a38b-9c7fea8e8ee9" absoluteBounds="3.765, 9.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddb62ab2-3cc9-4245-a32d-dd5bf4e7f001" absoluteBounds="6.75, 8.75, 2, 2.3356245930989594">
+      <DataClassMoniker Name="/DCCarManagementDataContext/Camera" />
+      <nestedChildShapes>
+        <elementListCompartment Id="231e7336-b1ed-461c-95f0-18877736cf16" absoluteBounds="6.765, 9.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b379799e-1afb-4f2f-bcbe-436d2c6f5e74" absoluteBounds="9.75, 0.75, 2, 3.6727624511718746">
+      <DataClassMoniker Name="/DCCarManagementDataContext/Car" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1aaee576-8f7c-4977-96ef-716bde613b50" absoluteBounds="9.765, 1.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ff909510-e6de-42d8-8fb3-d91b57eb87b0" absoluteBounds="9.75, 5.75, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CarAttribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69a0450c-ace3-4024-8f74-566eeb4faaf0" absoluteBounds="9.765, 6.21, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a632a7de-d0c3-4567-bac2-267f02caf371" absoluteBounds="9.75, 8.75, 2, 2.9086836751302076">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CardInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4232a7c6-60e3-4d3d-ac0e-2647596ca618" absoluteBounds="9.765, 9.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8705c1fe-62a7-4c60-b491-b99f9841e707" absoluteBounds="12.75, 0.75, 2, 4.0548018391927076">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CarInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df832a4e-14a6-4173-82bc-9b288417655f" absoluteBounds="12.765, 1.21, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84713161-2191-4a09-baa9-d86094290c77" absoluteBounds="0.75, 12.75, 2, 3.0997033691406255">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CarInOutInfoRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3233c18-a696-443b-b7c4-d9851c1c678c" absoluteBounds="0.765, 13.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a85fcbcf-3527-4770-8f77-4b0e40bf6749" absoluteBounds="3.75, 12.75, 2, 5.5829593912760416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CarInOutRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef2e4b48-87a5-4536-94d6-37c6a290adf6" absoluteBounds="3.765, 13.21, 1.9700000000000002, 5.0229593912760411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24369578-80ec-4321-b0c5-14a183bee1a0" absoluteBounds="12.75, 5.75, 2, 3.0997033691406255">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CarPic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43bdabb5-bc38-471c-a910-31bc6bde47be" absoluteBounds="12.765, 6.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20ad2086-f7f0-47d8-b919-b1ae3195e7c0" absoluteBounds="9.75, 13.75, 2, 1.9535852050781255">
+      <DataClassMoniker Name="/DCCarManagementDataContext/ClientInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e6e587d-0895-47b1-98d1-5267d48254e5" absoluteBounds="9.765, 14.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4943fa3a-f5d6-44ed-ac49-9b8871374265" absoluteBounds="12.75, 13.75, 2, 2.7176639811197951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/ControlInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bdca6c63-817d-42cb-b2d2-05b18a785aec" absoluteBounds="12.765, 14.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88920644-d271-4c76-af4e-9d0112396361" absoluteBounds="15.75, 0.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CustomerInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90760f21-cae8-42cf-81e4-5efd67806c33" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a3e74b5-2242-4e66-ad2f-2bd25f40ee44" absoluteBounds="15.75, 4.75, 2, 3.4817427571614576">
+      <DataClassMoniker Name="/DCCarManagementDataContext/DeviceControl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d26a24c-1954-4c80-ac8a-f52ace21db19" absoluteBounds="15.765, 5.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5bff1e0-4a31-4fc6-a225-67c920d15afb" absoluteBounds="15.75, 8.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/Dictionary" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec8f765b-5fe7-4051-8e83-3f7546b44001" absoluteBounds="15.765, 9.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="869dd6d1-5d71-4e5c-9cac-8b81b8bc17fb" absoluteBounds="15.75, 12.75, 2, 3.8637821451822951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/Driveway" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0568c3c4-162a-44e1-8140-154599f8d9f7" absoluteBounds="15.765, 13.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="276e178b-0b87-44bd-b2e4-0c64aa3dc9b6" absoluteBounds="6.75, 17.75, 2, 1.9535852050781273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/DrivewayRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f9fdbba-cac0-4463-814f-5e3fd5efe975" absoluteBounds="6.765, 18.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1ebc4c4-77ca-416c-a32a-cc8fa8e5e559" absoluteBounds="9.75, 17.75, 2, 2.5266442871093773">
+      <DataClassMoniker Name="/DCCarManagementDataContext/DrivewayStrategy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58143c6c-19f8-41d0-b13b-7cca7670a648" absoluteBounds="9.765, 18.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c546d33d-8684-4a6c-8112-344585c20319" absoluteBounds="12.75, 17.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/DCCarManagementDataContext/DrivewayStrategyRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4433ea6c-f4be-4a49-8bd5-47f81ed93de2" absoluteBounds="12.765, 18.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb84fe2a-ee0f-4d41-8df7-758a6fd57a23" absoluteBounds="18.75, 0.75, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/FVNInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f53923b-77c2-40ae-863b-96d57254ecf2" absoluteBounds="18.765, 1.21, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67e1378a-00ff-4bda-a6ea-a04661884319" absoluteBounds="0.75, 18.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/DCCarManagementDataContext/ICCard" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e5940b8-7365-4ee0-9543-a47387624ee9" absoluteBounds="0.765, 19.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c678d91e-77fb-4237-a935-321dd585a426" absoluteBounds="18.75, 3.75, 2, 1.7625655110677077">
+      <DataClassMoniker Name="/DCCarManagementDataContext/IcCardPermissions" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63afe903-d590-40ef-8617-2e0b6ef7104a" absoluteBounds="18.765, 4.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0468e360-5bff-4634-8771-fc248e40e928" absoluteBounds="18.75, 6.75, 2, 2.3356245930989576">
+      <DataClassMoniker Name="/DCCarManagementDataContext/ICCardType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="022d543d-9b00-4fd0-90f3-6f3f516d9991" absoluteBounds="18.765, 7.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d4050aa-5bfa-4a4f-bab0-e7438beecc2c" absoluteBounds="18.75, 9.75, 2, 1.9535852050781255">
+      <DataClassMoniker Name="/DCCarManagementDataContext/LogInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f31ca32f-6618-4fee-83a8-089808ee5cd5" absoluteBounds="18.765, 10.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ae73f4da-4167-4fef-a2f1-66aa0343a720" absoluteBounds="18.75, 16.75, 2, 3.8637821451822951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/ManagementStrategyRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="712bc7ff-73d7-43df-9a59-09f5483ea3c5" absoluteBounds="18.765, 17.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7646c7d-489c-4019-a399-b212d4f2700e" absoluteBounds="3.75, 20.75, 2, 3.8637821451822951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/MenuInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9a00b1a-01d6-4d6f-bb49-e67b75eca12c" absoluteBounds="3.765, 21.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc1cdf7e-77d2-44d0-b404-88d82139842a" absoluteBounds="21.75, 0.75, 2, 1.7625655110677081">
+      <DataClassMoniker Name="/DCCarManagementDataContext/MenuType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="128c217d-97cd-4abe-a17c-fe98c6d81636" absoluteBounds="21.765, 1.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01ce5989-1dfe-43e8-85b7-a8437db5b5fe" absoluteBounds="21.75, 3.75, 2, 2.3356245930989576">
+      <DataClassMoniker Name="/DCCarManagementDataContext/NoteRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad401940-3596-4923-a475-a8e33ea6831f" absoluteBounds="21.765, 4.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31dbe9f9-1631-4b86-a822-d42c2bd5cb13" absoluteBounds="21.75, 6.75, 2, 2.3356245930989576">
+      <DataClassMoniker Name="/DCCarManagementDataContext/ParityInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7159dbba-796b-487f-9b24-8a6bed8ce9cb" absoluteBounds="21.765, 7.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="edf69f68-b65c-4169-8587-cf53e0badd9c" absoluteBounds="6.75, 21.75, 2, 2.1446048990885451">
+      <DataClassMoniker Name="/DCCarManagementDataContext/PermissionsInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea46d3ac-e563-41eb-b1fb-9466c5e2a9fc" absoluteBounds="6.765, 22.21, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f082b36-6a93-4817-9220-b69363f0e386" absoluteBounds="21.75, 9.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19699bd2-c418-44bc-9d24-2edf385c49d2" absoluteBounds="21.765, 10.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e9e9653-ea4b-4e8a-aca8-c88267e71c32" absoluteBounds="9.75, 21.75, 2, 4.2458215332031273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/PositionLED" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5644b8b-5e76-4d82-a50a-1b94b42425ad" absoluteBounds="9.765, 22.21, 1.9700000000000002, 3.685821533203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d092b453-34d7-496b-bb9d-b498067e28d0" absoluteBounds="21.75, 13.75, 2, 2.7176639811197951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/PositionSMS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e14a9345-8d72-48a0-b071-49c5b40e45a8" absoluteBounds="21.765, 14.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1cbf7340-6c44-473f-84f3-0eb1aca72631" absoluteBounds="21.75, 17.75, 2, 2.7176639811197951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/PositionVoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62857be7-73ab-4bfd-b591-7e962f6706aa" absoluteBounds="21.765, 18.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d2011d8-edc0-45d8-8624-ec2511f2966e" absoluteBounds="18.75, 21.75, 2, 1.9535852050781273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/PrintInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9031041-27b9-430b-afe9-bb51204a111c" absoluteBounds="18.765, 22.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f63aba0f-a209-452b-a0d6-706bec246097" absoluteBounds="21.75, 21.75, 2, 1.7625655110677094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/PrintRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="395c96ee-8825-4906-97ed-0529676d1df1" absoluteBounds="21.765, 22.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c4e9659-1c76-4419-8880-63fd2b12322a" absoluteBounds="12.75, 23.75, 2, 1.7625655110677094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/RoleInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dbd980e5-dea4-496e-b5e1-aa81ce019173" absoluteBounds="12.765, 24.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92e49082-abd2-4176-be6f-8a027f3a3848" absoluteBounds="24.75, 0.75, 2, 3.4817427571614576">
+      <DataClassMoniker Name="/DCCarManagementDataContext/SmallTicket" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12e0a4b2-f529-468c-aead-41d993e115b6" absoluteBounds="24.765, 1.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42700de0-b221-4f6d-9516-914d0b53a1b4" absoluteBounds="24.75, 4.75, 2, 4.8188806152343755">
+      <DataClassMoniker Name="/DCCarManagementDataContext/SortNumberInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ed20443-5f80-48a2-8d6c-df90ce245998" absoluteBounds="24.765, 5.21, 1.9700000000000002, 4.258880615234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b081f53-c998-4876-86fe-e8038ad288e6" absoluteBounds="24.75, 14.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/DCCarManagementDataContext/StaffInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6221679e-a85d-4e22-93bf-d802a026ba11" absoluteBounds="24.765, 15.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38caceda-33d4-4114-a631-ec46fa5d32a7" absoluteBounds="15.75, 24.75, 2, 1.3805261230468773">
+      <DataClassMoniker Name="/DCCarManagementDataContext/StaffInfo_CarInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2644524-be47-45c0-b6e7-bed1d5f9bdfd" absoluteBounds="15.765, 25.21, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d915a887-d461-4b59-a99b-5bc2b02367a8" absoluteBounds="24.75, 18.75, 2, 2.3356245930989594">
+      <DataClassMoniker Name="/DCCarManagementDataContext/SystemSet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df15120f-78e1-4878-ae8b-5240c8088128" absoluteBounds="24.765, 19.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28608cfc-a892-437a-a931-4db54aae4c00" absoluteBounds="18.75, 24.75, 2, 4.0548018391927094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/UnusualRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6124f6a8-4338-42a6-ba7d-beb175837867" absoluteBounds="18.765, 25.21, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7666c03-c184-4960-b1e9-4248440e87de" absoluteBounds="24.75, 21.75, 2, 1.7625655110677094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/UnusualType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec2b2c09-6f6d-4aec-aebd-2d2cde722eda" absoluteBounds="24.765, 22.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58bdf5fa-3228-493e-8368-7c60ff36c465" absoluteBounds="21.75, 24.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/DCCarManagementDataContext/UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aeedac81-063e-4e3e-bd35-a3a5ccc8a608" absoluteBounds="21.765, 25.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efde4c8e-65b0-4c8a-b3b8-631137e6cba2" absoluteBounds="24.75, 24.75, 2, 2.3356245930989594">
+      <DataClassMoniker Name="/DCCarManagementDataContext/VoiceCalls" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68d02068-2b2a-4f38-967e-684a42adf595" absoluteBounds="24.765, 25.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e41d92b7-b88c-434c-aae0-e3c19a6be263" absoluteBounds="0.75, 25.75, 2, 1.9535852050781273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/WeighInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a905c50-43bd-4826-983f-d968fae5854a" absoluteBounds="0.765, 26.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1eac3d28-68d3-4f26-a373-699c8b8a83ca" absoluteBounds="3.75, 25.75, 2, 2.5266442871093773">
+      <DataClassMoniker Name="/DCCarManagementDataContext/WeighStrategy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fff65b6-3744-484b-8bad-92a1cce2b2ad" absoluteBounds="3.765, 26.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d72582c0-e46a-48a4-b0a8-809a00633c1c" absoluteBounds="6.75, 24.75, 2, 4.2458215332031273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/UserInfo_RoleInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c870be60-b325-4cf2-840c-5cb05714e377" absoluteBounds="6.765, 25.21, 1.9700000000000002, 3.685821533203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5635230a-8d6a-4fa9-ae07-534a22c8b6ad" absoluteBounds="0.75, 22.75, 2, 1.9535852050781273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_yichangTJ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec50355d-9816-45ad-8fdf-d7c7bb82312d" absoluteBounds="0.765, 23.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5308ffa0-1d1c-4fd9-b62e-4e41eb63bbf0" absoluteBounds="9.75, 26.75, 2, 2.7176639811197951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d0ffd33-9d42-4492-868a-552019c22385" absoluteBounds="9.765, 27.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc545d99-3443-4a9f-99bf-f38b4869857b" absoluteBounds="12.75, 26.75, 2, 2.7176639811197951">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_Blacklist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcdf8f6b-f905-42f4-8012-83cb4a333440" absoluteBounds="12.765, 27.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53fed0a9-4969-4109-a737-7001fd39e5b6" absoluteBounds="27.75, 0.75, 2, 9.9764123535156255">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_BlackList_CarInfo_StaffInfo_CustomerInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb61788d-f96b-42ed-a274-702879d16bf8" absoluteBounds="27.765, 1.21, 1.9700000000000002, 9.416412353515625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cb93326-831c-4b6a-b3f2-e3faf67c4563" absoluteBounds="27.75, 10.75, 2, 11.886609293619792">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_BusinessRecord_CarInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c0e19183-4e9a-41f6-95cb-201a3d21e289" absoluteBounds="27.765, 11.21, 1.9700000000000002, 11.326609293619791" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1508e016-c512-434b-bd0f-2613c85ca475" absoluteBounds="15.75, 27.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_BusinessType_UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f96de83-c5b0-42c4-abae-b39e83d0720e" absoluteBounds="15.765, 28.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d37e9ee4-05d6-41a0-8cb2-0910248ef148" absoluteBounds="27.75, 22.75, 2, 7.3021366373697916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_Camera_Driveway_Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3dfcef8b-2bb2-4869-a44f-eecc4aacf253" absoluteBounds="27.765, 23.21, 1.9700000000000002, 6.7421366373697911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="368ec411-71a1-4e9e-90d2-2525c7eb9915" absoluteBounds="0.75, 28.75, 2, 6.7290775553385416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_Car_ICard_CarType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb06e60a-ce5d-4547-baa0-6ee944a31e60" absoluteBounds="0.765, 29.21, 1.9700000000000002, 6.1690775553385411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="953f1551-469a-4c9b-ae92-726feddedb10" absoluteBounds="21.75, 28.75, 2, 15.707003173828127">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarCheck" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b61880ef-be50-4d58-ba29-981fa69c9107" absoluteBounds="21.765, 29.21, 1.9700000000000002, 15.147003173828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cac5ba30-9d20-47f6-8923-93bf0dd4e2fe" absoluteBounds="3.75, 29.75, 2, 4.054801839192713">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CardInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d90a805-0040-4b89-8219-ef570b2a3d95" absoluteBounds="3.765, 30.21, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18a6ae38-f34b-40b1-81c3-23de0979bb3a" absoluteBounds="30.75, 0.75, 2, 5.9649987792968746">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CardInfo_Driveway" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d6231a9-0d14-4c3b-b3dc-b5c627858740" absoluteBounds="30.765, 1.21, 1.9700000000000002, 5.404998779296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="99d86554-de92-4a43-90b6-adf72a65ba22" absoluteBounds="6.75, 30.75, 2, 13.796806233723963">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarInfo_CarType_CustomerInfo_StaffInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fad48087-821a-4430-bcfa-1fcc796bc82b" absoluteBounds="6.765, 31.21, 1.9700000000000002, 13.236806233723957" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c936f3f-4397-44f6-b84e-17b4bafa4d4a" absoluteBounds="30.75, 7.75, 2, 22.010653076171877">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarInOutRecords" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18926481-afbe-4440-9cb9-9dcfd6a8e787" absoluteBounds="30.765, 8.21, 1.9700000000000002, 21.450653076171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7237422c-6d08-4155-95e5-72b81d623eae" absoluteBounds="9.75, 30.75, 2, 9.9764123535156273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_carInOutSatistics" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c02cdf6-eac4-461c-bb4e-db4e4d84ee3b" absoluteBounds="9.765, 31.21, 1.9700000000000002, 9.416412353515625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b30b37b1-85cb-433b-90a9-fdaa2a9556da" absoluteBounds="24.75, 30.75, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarinoutStaffInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="572fc456-ffd9-48cf-979f-0274b01cd2c5" absoluteBounds="24.765, 31.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26e028c2-cc60-4640-9d4b-b50e55ed371a" absoluteBounds="27.75, 30.75, 2, 6.347038167317713">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarPic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="696e940e-5f60-4925-9fb2-3e0234c6418e" absoluteBounds="27.765, 31.21, 1.9700000000000002, 5.787038167317708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f8f6785-60e6-42f4-8255-4be9098dc754" absoluteBounds="30.75, 28.75, 2, 5.3919396972656273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarPic_Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c9aec39-d4e3-4328-bc4b-9c33ba579087" absoluteBounds="30.765, 29.21, 1.9700000000000002, 4.831939697265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6755fd7b-c74f-445a-ad28-2e8e2f72f18e" absoluteBounds="12.75, 31.75, 2, 5.9649987792968773">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarPrecedence" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81e64f35-3b76-417a-b811-9bad3f529631" absoluteBounds="12.765, 32.21, 1.9700000000000002, 5.404998779296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea214bec-9a33-4259-a4ba-0af91d279307" absoluteBounds="15.75, 31.75, 2, 17.426180419921877">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarState" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b14db486-2096-48a4-bc66-a08d1107c3b3" absoluteBounds="15.765, 32.21, 1.9700000000000002, 16.866180419921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dafb53a6-a11d-4e30-bdf0-bfa82efe78e1" absoluteBounds="33.75, 0.75, 2, 3.6727624511718746">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_CarType_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b470bb9b-f3ec-427b-b166-46a1a5b03c0b" absoluteBounds="33.765, 1.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b378a3db-3404-4f22-9e1c-63e9b17ccc72" absoluteBounds="33.75, 5.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_cheliangxinxi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2def13a3-43ca-4676-8ee5-86808c21fb21" absoluteBounds="33.765, 6.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25bed66c-b5db-46fd-9d3d-1b37f367ce67" absoluteBounds="33.75, 9.75, 2, 2.5266442871093755">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_ControlInfo_ControlInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7aae485b-196e-4d48-bbed-aa382adf157b" absoluteBounds="33.765, 10.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5023ddf-d9ee-470e-9b3a-aa6a8e445cb7" absoluteBounds="33.75, 13.75, 2, 6.3470381673177094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_DrivewayPosition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f1d429e-0bbc-4639-8797-1a5f5c4125d6" absoluteBounds="33.765, 14.21, 1.9700000000000002, 5.787038167317708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a460d275-d102-419c-b48c-74de69b2aade" absoluteBounds="33.75, 20.75, 2, 6.1560184733072916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_DrivewayStrategy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37bbc924-c194-4f7c-a332-cfae49e69154" absoluteBounds="33.765, 21.21, 1.9700000000000002, 5.5960184733072911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3845242e-6198-4141-a488-18bd459d061c" absoluteBounds="33.75, 27.75, 2, 7.3021366373697916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_DrivewayStrategy_Driveway_Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb9fdc37-fc7a-438b-a8f8-0ea232bc0ff3" absoluteBounds="33.765, 28.21, 1.9700000000000002, 6.7421366373697911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a726db7-bc31-40e2-934f-73fd2b787d53" absoluteBounds="0.75, 35.75, 2, 12.841707763671877">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_DrivewayStrategy_Driveway_Position_CarType_CarInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2553dd87-4fa2-4d0e-85f4-9cf5b53efabf" absoluteBounds="0.765, 36.21, 1.9700000000000002, 12.281707763671875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28bbd292-dd27-418f-9477-1e8333d46d1f" absoluteBounds="30.75, 35.75, 2, 4.8188806152343773">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_DrivewayStrategyRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32e21947-01bc-4db2-bd92-66855e726d1a" absoluteBounds="30.765, 36.21, 1.9700000000000002, 4.258880615234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b110eac0-c350-4ad7-b7aa-81302c206d92" absoluteBounds="33.75, 35.75, 2, 6.7290775553385416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_FVN_Driveway_Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e957c27-9532-4117-a020-01e448c5c1d1" absoluteBounds="33.765, 36.21, 1.9700000000000002, 6.1690775553385411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34fe1ac6-1246-4220-88aa-fbf6fd3f53dc" absoluteBounds="36.75, 0.75, 2, 22.774731852213542">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_IC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="888c3a9b-f5c8-4c20-abe2-9c21da96c917" absoluteBounds="36.765, 1.21, 1.9700000000000002, 22.214731852213539" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3046930a-976e-4d86-bf5b-1f918bc8ed87" absoluteBounds="36.75, 21.75, 2, 6.3470381673177094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_ICCard_ICCardType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4e1cbec-dbf1-44ff-aae3-5a44be6d79eb" absoluteBounds="36.765, 22.21, 1.9700000000000002, 5.787038167317708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a599aee4-9bba-4787-a638-0200feb7833c" absoluteBounds="36.75, 28.75, 2, 4.4368412272135416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_LEDset" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25c93883-383a-4e52-a380-1a25929b5ac3" absoluteBounds="36.765, 29.21, 1.9700000000000002, 3.8768412272135415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f009578-a310-4459-8afa-fa2aecb76ae9" absoluteBounds="36.75, 33.75, 2, 8.639274495442713">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_LEDShow_zj" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49bb8e0a-e987-4a59-aee1-7ba220325e85" absoluteBounds="36.765, 34.21, 1.9700000000000002, 8.0792744954427071" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d5a96ff-2561-47f8-97b2-0b4cb20a5641" absoluteBounds="24.75, 37.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_LogInfo_Dictionary" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c4e2a4e-da89-4c47-b7aa-b5b351cf2415" absoluteBounds="24.765, 38.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1874bfff-c7fb-4947-b071-c82b0f4121d3" absoluteBounds="39.75, 0.75, 2, 8.8302941894531255">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_ManagementStrategy_CarType_DrivewayStrategy_ControlInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7af8d6f-5b81-45e4-93b5-4a05ce3ba41f" absoluteBounds="39.765, 1.21, 1.9700000000000002, 8.270294189453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6174a458-81d1-4261-b7ca-1fc922cd8214" absoluteBounds="39.75, 9.75, 2, 7.4931563313802094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_ManagementStrategy_ControlInfo_CarType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43ff7f4f-7c92-4609-90b0-519a6d0a3716" absoluteBounds="39.765, 10.21, 1.9700000000000002, 6.933156331380208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="619dac66-a1f1-4852-9ef9-2f47f340c76e" absoluteBounds="39.75, 17.75, 2, 10.358451741536459">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_ManagementStrategyRecord_CarType_DrivewayStrategy_ControlInfo_CarInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9dc460eb-8f2e-48c5-9eea-3b0ba8ef8597" absoluteBounds="39.765, 18.21, 1.9700000000000002, 9.7984517415364571" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c282d29-0034-480e-9d6c-dc94fc67e6c4" absoluteBounds="39.75, 27.75, 2, 5.200920003255213">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_ManagementStrategyRecordRecord_CarType_DrivewayStrategyRecordRecord_ControlInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="038d2209-d468-4522-8c98-dd10102e9050" absoluteBounds="39.765, 28.21, 1.9700000000000002, 4.640920003255208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db25171d-c1db-4795-9804-e02cb352d204" absoluteBounds="39.75, 33.75, 2, 9.5943729654947916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_MenuInfo_P" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33214ee0-8cad-4a7c-be78-8b835f9eb59a" absoluteBounds="39.765, 34.21, 1.9700000000000002, 9.0343729654947911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="826b0f27-1ab0-492b-ad46-6a4ff463618e" absoluteBounds="9.75, 40.75, 2, 8.2572351074218773">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_MenuManager" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6082a23f-15fe-4d5d-a0b5-1a5ff290a13e" absoluteBounds="9.765, 41.21, 1.9700000000000002, 7.697235107421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a92687d7-255b-45f7-84f4-2fd39ff358ac" absoluteBounds="24.75, 41.75, 2, 3.0997033691406273">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_Position_UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ff63c12-2b39-4a47-ab97-67f4b523dba4" absoluteBounds="24.765, 42.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78fd3508-0af3-475d-9971-fc847667d33c" absoluteBounds="27.75, 41.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_PrintRecordInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4116d35-7124-4feb-8dcc-b2d4e95330aa" absoluteBounds="27.765, 42.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0eb04a6c-a48c-4075-b4d3-c51dc4c06720" absoluteBounds="42.75, 0.75, 2, 5.7739790852864576">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_ShowLED" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9954104c-6b53-485e-b788-9b8645a52a74" absoluteBounds="42.765, 1.21, 1.9700000000000002, 5.213979085286458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58189f25-b97e-44b0-b32b-a4fa1a7875fc" absoluteBounds="42.75, 6.75, 2, 5.9649987792968755">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_SMSStaffInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="142c7287-1fa5-4251-a5b1-83b425da2d32" absoluteBounds="42.765, 7.21, 1.9700000000000002, 5.404998779296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cee35467-921a-43f6-b2b5-7d8ff7263260" absoluteBounds="42.75, 13.75, 2, 11.695589599609377">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_StaCarInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6390d20-5ca7-4293-bd13-f9a7b4a05b3d" absoluteBounds="42.765, 14.21, 1.9700000000000002, 11.135589599609375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b10c71ad-f8bf-439b-8779-8fbc2e77e7fe" absoluteBounds="42.75, 25.75, 2, 2.9086836751302094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_StaffInfo_CarInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35885dd4-f2bd-4b15-a162-6ae00253217a" absoluteBounds="42.765, 26.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a69f1a3-4fbd-48cf-827d-911be58a789c" absoluteBounds="42.75, 29.75, 2, 6.1560184733072916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_StaffInfo_ICCard" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35420726-a15c-4244-aa64-3386b5d52f02" absoluteBounds="42.765, 30.21, 1.9700000000000002, 5.5960184733072911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c63577fa-5312-429b-b503-12f591d9766b" absoluteBounds="30.75, 42.75, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_UnusualRecord_Car_UnusualType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b510c98e-7b53-49df-adc5-bfc9e855b962" absoluteBounds="30.765, 43.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05b5f70f-f2fe-4289-8ca1-d2d001d35c15" absoluteBounds="33.75, 42.75, 2, 15.515983479817713">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_Web_CarInOutRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="754e3acc-25bd-4229-bafd-16c4364acc5e" absoluteBounds="33.765, 43.21, 1.9700000000000002, 14.955983479817707" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94d01478-6178-445b-a35d-2ed48296d3a5" absoluteBounds="42.75, 36.75, 2, 5.9649987792968773">
+      <DataClassMoniker Name="/DCCarManagementDataContext/View_WeighStrategy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eab0fef4-ea3c-4ab7-a038-df1ac2821320" absoluteBounds="42.765, 37.21, 1.9700000000000002, 5.404998779296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="578fc7a5-7cdd-4f8f-ab81-3dc471c2109f" absoluteBounds="3.75, 43.75, 2, 6.7290775553385416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/view_WeighStrategyRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62c7e347-3f9e-4d7d-a010-20d95898bded" absoluteBounds="3.765, 44.21, 1.9700000000000002, 6.1690775553385411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="881fcd9f-aade-4904-8d6a-d3ef18893be9" absoluteBounds="18.625, 12.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/DCCarManagementDataContext/ManagementStrategy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42d8c9ab-0023-4018-974b-68b378b60a44" absoluteBounds="18.64, 13.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de6abd8a-afa4-407f-b504-489d60413458" absoluteBounds="12.75, 9.5, 2, 4.0548018391927076">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CarType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="146972ca-e5e3-49b0-8fea-972a8024c25f" absoluteBounds="12.765, 9.96, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89a82e81-4699-43b5-8bd8-eb921a8ad19c" absoluteBounds="24.5, 10.375, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/DCCarManagementDataContext/sortReset" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e5d0046-f501-4844-ae91-6e63c94e754c" absoluteBounds="24.515, 10.835, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9961d3a-7eb3-4515-8ea9-c88952806828" absoluteBounds="7, 12.5, 2, 4.0548018391927094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/CarPrecedence" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfa69284-ce38-46ce-9d37-73b4d206d357" absoluteBounds="7.015, 12.96, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f53f4458-9926-4f36-82b0-9d5e17540859" absoluteBounds="16, 17.625, 2, 5.2009200032552094">
+      <DataClassMoniker Name="/DCCarManagementDataContext/eh_SAPRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d2cb73c-9b34-4550-9416-c8150d582b08" absoluteBounds="16.015, 18.085, 1.9700000000000002, 4.640920003255208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

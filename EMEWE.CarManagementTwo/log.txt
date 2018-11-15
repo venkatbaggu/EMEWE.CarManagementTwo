@@ -1,0 +1,71 @@
+2012-05-15 11:40:19: MenuInfoUpdate.MenuInfoUpdate_Load 修改页面出现异常
+2012-05-15 11:40:22: MenuInfoUpdate.MenuInfoUpdate_Load 修改页面出现异常
+2012-05-15 11:40:26: MenuInfoUpdate.MenuInfoUpdate_Load 修改页面出现异常
+2012-05-15 11:40:28: MenuInfoUpdate.MenuInfoUpdate_Load 修改页面出现异常
+2012-05-15 11:40:45: MenuInfoUpdate.MenuInfoUpdate_Load 修改页面出现异常
+2012-05-15 11:41:43: MenuInfoUpdate.MenuInfoUpdate_Load 修改页面出现异常
+2012-05-15 11:46:55: MenuInfoUpdate.MenuInfoUpdate_Load 修改页面出现异常
+2012-05-15 13:41:19: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:41:35: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:42:10: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:42:15: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:43:50: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:46:06: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:49:00: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:49:06: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:49:11: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:49:33: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:49:51: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:50:32: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 13:51:51: MenuInfoADD.btn_Add_Click()输入字符串的格式不正确。
+2012-05-15 15:22:36: CommonalityEntity.btnSearch()未将对象引用设置到对象的实例。
+2012-05-15 15:25:11: CommonalityEntity.btnSearch()未将对象引用设置到对象的实例。
+2012-05-15 15:27:38: CommonalityEntity.btnSearch()未将对象引用设置到对象的实例。
+2012-05-15 16:45:50: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 08:59:16: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 13:19:09: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 13:20:38: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 13:20:38: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 13:20:39: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 13:20:39: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 13:20:40: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 13:22:29: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 13:26:30: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 14:58:36: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 15:00:43: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 15:31:16: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 15:31:19: UserRole.tsl_Role_Click()未将对象引用设置到对象的实例。
+2012-05-16 15:51:20: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 15:52:47: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 15:54:47: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 15:55:49: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 15:58:15: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-16 15:59:07: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 09:25:09: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 09:36:11: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 09:36:49: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 09:37:26: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 09:44:20: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 10:04:03: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 10:21:25: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:12:31: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:13:06: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:14:05: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:14:46: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:15:23: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:15:39: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:16:09: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:34:00: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:35:59: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:38:16: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:39:24: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 11:41:03: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 12:02:59: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 12:03:27: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 12:04:11: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 12:53:17: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 12:54:26: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 12:57:24: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-17 13:22:18: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-21 11:28:57: CommonalityEntity.WriteLogData:序列不包含任何元素
+2012-05-21 16:55:05: CommonalityEntity.WriteLogData:序列不包含任何元素

@@ -1,0 +1,1085 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B309E48-7415-4B31-B6E5-DADE9484C0A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMEWE.CarManagement</RootNamespace>
+    <AssemblyName>EMEWE.CarManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>2472.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.MODBUSLib, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ProjectDLL\DLL\AxInterop.MODBUSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ComUserCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ProjectDLL\DLL\ComUserCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="EMEWE.Common">
+      <HintPath>ProjectDLL\DLL\EMEWE.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.ExcelLite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ProjectDLL\DLL\GemBox.ExcelLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MODBUSLib">
+      <HintPath>ProjectDLL\DLL\Interop.MODBUSLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.SpeechLib, Version=5.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>ProjectDLL\DLL\Interop.SpeechLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.swPlateRec, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.swPlateRec.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Szhto, Version=14.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.Szhto.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.XPARKLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>ProjectDLL\DLL\Interop.XPARKLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ProjectDLL\DLL\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>ProjectDLL\DLL\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>ProjectDLL\DLL\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>ProjectDLL\DLL\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NModbus4, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ProjectDLL\DLL\NModbus4.dll</HintPath>
+    </Reference>
+    <Reference Include="nModbusPLCCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ProjectDLL\DLL\nModbusPLCCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="RS485Comm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>ProjectDLL\DLL\RS485Comm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Speech">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonClass\ControlPLC.cs" />
+    <Compile Include="CommonClass\ExcelClass.cs" />
+    <Compile Include="CommonClass\Internet.cs" />
+    <Compile Include="CommonClass\PublicClass.cs" />
+    <Compile Include="GetPhoto\CHCNetSDK.cs" />
+    <Compile Include="GetPhoto\SDKCommon.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\Execlbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\Execlbar.Designer.cs">
+      <DependentUpon>Execlbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\MyUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyUserControl.Designer.cs">
+      <DependentUpon>MyUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\MyUserTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyUserTree.Designer.cs">
+      <DependentUpon>MyUserTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\MyUserTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyUserTreeView.Designer.cs">
+      <DependentUpon>MyUserTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetSDK\CHNetSdk.cs" />
+    <Compile Include="NetSDK\SDKCommon.cs" />
+    <Compile Include="NetSDK\SDKCommonTwo.cs" />
+    <Compile Include="SystemAdmin\BlacklistSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\BlacklistSet.designer.cs">
+      <DependentUpon>BlacklistSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarForm.Designer.cs">
+      <DependentUpon>CarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarImgInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarImgInfoForm.designer.cs">
+      <DependentUpon>CarImgInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoDetailForm.designer.cs">
+      <DependentUpon>CarInfoDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoForm.designer.cs">
+      <DependentUpon>CarInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoInfoRecordPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoInfoRecordPic.designer.cs">
+      <DependentUpon>CarInfoInfoRecordPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormFour.Designer.cs">
+      <DependentUpon>CarInformationFormFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormFive.Designer.cs">
+      <DependentUpon>CarInformationFormFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormOne.Designer.cs">
+      <DependentUpon>CarInformationFormOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormSix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormSix.Designer.cs">
+      <DependentUpon>CarInformationFormSix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormThree.Designer.cs">
+      <DependentUpon>CarInformationFormThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInformationFormTwo.Designer.cs">
+      <DependentUpon>CarInformationFormTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\carInOutSatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\carInOutSatistics.designer.cs">
+      <DependentUpon>carInOutSatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarPicInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarPicInfoForm.designer.cs">
+      <DependentUpon>CarPicInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CheckInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CheckInfo.Designer.cs">
+      <DependentUpon>CheckInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ControlForm.Designer.cs">
+      <DependentUpon>ControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ControlPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ControlPassForm.designer.cs">
+      <DependentUpon>ControlPassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CutPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CutPic.Designer.cs">
+      <DependentUpon>CutPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ICRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ICRecordForm.Designer.cs">
+      <DependentUpon>ICRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\LEDTingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\LEDTingForm.designer.cs">
+      <DependentUpon>LEDTingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\MessageBoxForm.Designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\PCountSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\PCountSetForm.Designer.cs">
+      <DependentUpon>PCountSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\PortFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\PortFrom.Designer.cs">
+      <DependentUpon>PortFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\PrintInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\PrintInfoForm.designer.cs">
+      <DependentUpon>PrintInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\QueueResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\QueueResult.Designer.cs">
+      <DependentUpon>QueueResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ResetApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ResetApplication.designer.cs">
+      <DependentUpon>ResetApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\SAPInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\SAPInfoForm.designer.cs">
+      <DependentUpon>SAPInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\SAPRecordUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\SAPRecordUpdate.designer.cs">
+      <DependentUpon>SAPRecordUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\UpdateDrivewayStrategyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\UpdateDrivewayStrategyForm.designer.cs">
+      <DependentUpon>UpdateDrivewayStrategyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\UpdateManagementStrategyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\UpdateManagementStrategyForm.Designer.cs">
+      <DependentUpon>UpdateManagementStrategyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInOutForm.designer.cs">
+      <DependentUpon>CarInOutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\CardEntity.cs" />
+    <Compile Include="CommonClass\common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyLableClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NetSDK\NT88API.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\Execlbar.resx">
+      <DependentUpon>Execlbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\MyUserControl.resx">
+      <DependentUpon>MyUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\MyUserTree.resx">
+      <DependentUpon>MyUserTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\MyUserTreeView.resx">
+      <DependentUpon>MyUserTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\BlacklistSet.resx">
+      <DependentUpon>BlacklistSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarForm.resx">
+      <DependentUpon>CarForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarImgInfoForm.resx">
+      <DependentUpon>CarImgInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInfoDetailForm.resx">
+      <DependentUpon>CarInfoDetailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInfoForm.resx">
+      <DependentUpon>CarInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInfoInfoRecordPic.resx">
+      <DependentUpon>CarInfoInfoRecordPic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInformationFormFour.resx">
+      <DependentUpon>CarInformationFormFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInformationFormFive.resx">
+      <DependentUpon>CarInformationFormFive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInformationFormOne.resx">
+      <DependentUpon>CarInformationFormOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInformationFormSix.resx">
+      <DependentUpon>CarInformationFormSix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInformationFormThree.resx">
+      <DependentUpon>CarInformationFormThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInformationFormTwo.resx">
+      <DependentUpon>CarInformationFormTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\carInOutSatistics.resx">
+      <DependentUpon>carInOutSatistics.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarPicInfoForm.resx">
+      <DependentUpon>CarPicInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CheckInfo.resx">
+      <DependentUpon>CheckInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ControlForm.resx">
+      <DependentUpon>ControlForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ControlPassForm.resx">
+      <DependentUpon>ControlPassForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CutPic.resx">
+      <DependentUpon>CutPic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ICRecordForm.resx">
+      <DependentUpon>ICRecordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\LEDTingForm.resx">
+      <DependentUpon>LEDTingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\PCountSetForm.resx">
+      <DependentUpon>PCountSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\PortFrom.resx">
+      <DependentUpon>PortFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\PrintInfoForm.resx">
+      <DependentUpon>PrintInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\QueueResult.resx">
+      <DependentUpon>QueueResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ResetApplication.resx">
+      <DependentUpon>ResetApplication.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\SAPInfoForm.resx">
+      <DependentUpon>SAPInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\SAPRecordUpdate.resx">
+      <DependentUpon>SAPRecordUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\UpdateDrivewayStrategyForm.resx">
+      <DependentUpon>UpdateDrivewayStrategyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\UpdateManagementStrategyForm.resx">
+      <DependentUpon>UpdateManagementStrategyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInOutForm.resx">
+      <DependentUpon>CarInOutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\BlacklistForm.resx">
+      <DependentUpon>BlacklistForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\BusinessTypeForm.resx">
+      <DependentUpon>BusinessTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CameraForm.resx">
+      <DependentUpon>CameraForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarAttributeForm.resx">
+      <DependentUpon>CarAttributeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInfoInOutRecordForm.resx">
+      <DependentUpon>CarInfoInOutRecordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarInfoManager.resx">
+      <DependentUpon>CarInfoManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarState.resx">
+      <DependentUpon>CarState.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarStrategyRecord.resx">
+      <DependentUpon>CarStrategyRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CarTypeForm.resx">
+      <DependentUpon>CarTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ControlInfoForm.resx">
+      <DependentUpon>ControlInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\CustomerInfoForm.resx">
+      <DependentUpon>CustomerInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\DrivewayFrom.resx">
+      <DependentUpon>DrivewayFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\DrivewayStrategyForm.resx">
+      <DependentUpon>DrivewayStrategyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\FVNForm.resx">
+      <DependentUpon>FVNForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ICCardForm.resx">
+      <DependentUpon>ICCardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ICCardTypeForm.resx">
+      <DependentUpon>ICCardTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\LEDPreviewForm.resx">
+      <DependentUpon>LEDPreviewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\LEDSetForm.resx">
+      <DependentUpon>LEDSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\LoadCarManage.resx">
+      <DependentUpon>LoadCarManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\LoadSmallDiscern.resx">
+      <DependentUpon>LoadSmallDiscern.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ManagementStrategyForm.resx">
+      <DependentUpon>ManagementStrategyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\ManualControlPWdForm.resx">
+      <DependentUpon>ManualControlPWdForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\PositionFrom.resx">
+      <DependentUpon>PositionFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\PrintSetForm.resx">
+      <DependentUpon>PrintSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\PriorityCarInfoForm.resx">
+      <DependentUpon>PriorityCarInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\QueueForm.resx">
+      <DependentUpon>QueueForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\SAPCarInfoForm.resx">
+      <DependentUpon>SAPCarInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\SMSSetForm.resx">
+      <DependentUpon>SMSSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\StaffInfoForm.resx">
+      <DependentUpon>StaffInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\SystemSetForm.resx">
+      <DependentUpon>SystemSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\UnLoadCarManage.resx">
+      <DependentUpon>UnLoadCarManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\UnLoadSmallDiscern.resx">
+      <DependentUpon>UnLoadSmallDiscern.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\VoiceSetForm.resx">
+      <DependentUpon>VoiceSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\WeighHouseManage.resx">
+      <DependentUpon>WeighHouseManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\WeighHouseSmalldiscern.resx">
+      <DependentUpon>WeighHouseSmalldiscern.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\WeighInfo.resx">
+      <DependentUpon>WeighInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdmin\WeighStrategy.resx">
+      <DependentUpon>WeighStrategy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SystemAdmin\BlacklistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\BlacklistForm.Designer.cs">
+      <DependentUpon>BlacklistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\BusinessTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\BusinessTypeForm.Designer.cs">
+      <DependentUpon>BusinessTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CameraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CameraForm.designer.cs">
+      <DependentUpon>CameraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarAttributeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarAttributeForm.Designer.cs">
+      <DependentUpon>CarAttributeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoInOutRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoInOutRecordForm.Designer.cs">
+      <DependentUpon>CarInfoInOutRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarInfoManager.Designer.cs">
+      <DependentUpon>CarInfoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarState.Designer.cs">
+      <DependentUpon>CarState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarStrategyRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarStrategyRecord.Designer.cs">
+      <DependentUpon>CarStrategyRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CarTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CarTypeForm.Designer.cs">
+      <DependentUpon>CarTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ControlInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ControlInfoForm.Designer.cs">
+      <DependentUpon>ControlInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\CustomerInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\CustomerInfoForm.Designer.cs">
+      <DependentUpon>CustomerInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\DrivewayFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\DrivewayFrom.designer.cs">
+      <DependentUpon>DrivewayFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\DrivewayStrategyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\DrivewayStrategyForm.designer.cs">
+      <DependentUpon>DrivewayStrategyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\FVNForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\FVNForm.designer.cs">
+      <DependentUpon>FVNForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ICCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ICCardForm.designer.cs">
+      <DependentUpon>ICCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ICCardTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ICCardTypeForm.designer.cs">
+      <DependentUpon>ICCardTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\LEDPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\LEDPreviewForm.Designer.cs">
+      <DependentUpon>LEDPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\LEDSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\LEDSetForm.Designer.cs">
+      <DependentUpon>LEDSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\LoadCarManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\LoadCarManage.Designer.cs">
+      <DependentUpon>LoadCarManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\LoadSmallDiscern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\LoadSmallDiscern.Designer.cs">
+      <DependentUpon>LoadSmallDiscern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ManagementStrategyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ManagementStrategyForm.designer.cs">
+      <DependentUpon>ManagementStrategyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\ManualControlPWdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\ManualControlPWdForm.designer.cs">
+      <DependentUpon>ManualControlPWdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\PositionFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\PositionFrom.designer.cs">
+      <DependentUpon>PositionFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\PriorityCarInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\PriorityCarInfoForm.Designer.cs">
+      <DependentUpon>PriorityCarInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\SAPCarInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\SAPCarInfoForm.Designer.cs">
+      <DependentUpon>SAPCarInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\UnLoadCarManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\UnLoadCarManage.Designer.cs">
+      <DependentUpon>UnLoadCarManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\UnLoadSmallDiscern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\UnLoadSmallDiscern.Designer.cs">
+      <DependentUpon>UnLoadSmallDiscern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\VoiceSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\VoiceSetForm.Designer.cs">
+      <DependentUpon>VoiceSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\PrintSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\PrintSetForm.Designer.cs">
+      <DependentUpon>PrintSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\QueueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\QueueForm.Designer.cs">
+      <DependentUpon>QueueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\SMSSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\SMSSetForm.Designer.cs">
+      <DependentUpon>SMSSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\StaffInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\StaffInfoForm.Designer.cs">
+      <DependentUpon>StaffInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\SystemSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\SystemSetForm.designer.cs">
+      <DependentUpon>SystemSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighHouseManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighHouseManage.Designer.cs">
+      <DependentUpon>WeighHouseManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighHouseSmalldiscern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighHouseSmalldiscern.Designer.cs">
+      <DependentUpon>WeighHouseSmalldiscern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighInfo.Designer.cs">
+      <DependentUpon>WeighInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighStrategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdmin\WeighStrategy.Designer.cs">
+      <DependentUpon>WeighStrategy.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2472.ico" />
+    <None Include="bin\Debug\3.png" />
+    <None Include="bin\Debug\info.jpg" />
+    <Content Include="ProjectDLL\OCX\AxInterop.swPlateRec.dll" />
+    <Content Include="ProjectDLL\OCX\BarCode.dll" />
+    <Content Include="ProjectDLL\OCX\HTCOM.DLL" />
+    <Content Include="ProjectDLL\OCX\Interop.swPlateRec.dll" />
+    <Content Include="ProjectDLL\OCX\Interop.Szhto.dll" />
+    <Content Include="ProjectDLL\OCX\ocx\szhto.ocx" />
+    <Content Include="ProjectDLL\OCX\OutPutDLL.dll" />
+    <Content Include="ProjectDLL\OCX\SAPRFCTest.dll" />
+    <Content Include="ProjectDLL\OCX\SWPlateRec.DLL" />
+    <Content Include="ProjectDLL\OCX\SWPlateRec.ocx" />
+    <Content Include="ProjectDLL\OCX\szhto.ocx" />
+    <Content Include="ProjectDLL\OCX\XPARK.DLL" />
+    <Content Include="ProjectDLL\PLC\ModBus.dll" />
+    <Content Include="ProjectDLL\PLC\颜坤-修改2012-2-17\ModBus.dll" />
+    <Content Include="ProjectDLL\PLC\高哥\ModBus.dll" />
+    <Content Include="ProjectDLL\SAP\ED3\SAPRFCTest.dll" />
+    <Content Include="ProjectDLL\SAP\EP9\SAPRFCTest.dll" />
+    <Content Include="ProjectDLL\读卡器\XCard.dll" />
+    <None Include="Resources\82195587.jpg" />
+    <Content Include="Resources\LedImages.bmp" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ProjectDLL\OCX\LPRData.m" />
+    <None Include="ProjectDLL\OCX\注册组件.bat" />
+    <None Include="ProjectDLL\OCX\注册组件1.bat" />
+    <None Include="ProjectDLL\OCX\注册组件3.bat" />
+    <None Include="ProjectDLL\PLC\删除组件.bat" />
+    <None Include="ProjectDLL\PLC\注册组件.bat" />
+    <None Include="ProjectDLL\PLC\颜坤-修改2012-2-17\删除组件.bat" />
+    <None Include="ProjectDLL\PLC\颜坤-修改2012-2-17\注册组件.bat" />
+    <None Include="ProjectDLL\PLC\高哥\删除组件.bat" />
+    <None Include="ProjectDLL\PLC\高哥\注册组件.bat" />
+    <None Include="ProjectDLL\读卡器\删除组件.bat" />
+    <None Include="ProjectDLL\读卡器\注册组件.bat" />
+    <None Include="Resources\Button.png" />
+    <None Include="Resources\Login01.png" />
+    <None Include="SystemAdmin\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMEWE.CarManagement.Commons\EMEWE.CarManagement.Commons.csproj">
+      <Project>{9AB96C28-2048-4203-9F75-C7A220CB4D74}</Project>
+      <Name>EMEWE.CarManagement.Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EMEWE.CarManagement.DAL\EMEWE.CarManagement.DAL.csproj">
+      <Project>{87C89639-4CDF-4B74-B52E-8912BEB08651}</Project>
+      <Name>EMEWE.CarManagement.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EMEWE.CarManagement.Entity\EMEWE.CarManagement.Entity.csproj">
+      <Project>{E848162C-B300-4271-857B-0A0A97376706}</Project>
+      <Name>EMEWE.CarManagement.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPBAPIControlLib">
+      <Guid>{DC74637D-DE04-4B3D-9897-CB2BADEF754C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPFunctionsOCX">
+      <Guid>{273D3599-E8A7-4674-A3B7-430B9E0A78BD}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPLogonCtrl">
+      <Guid>{D7206A1D-3F10-412A-9F8B-A99536EE68E7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPTableFactoryCtrl">
+      <Guid>{BA0175F9-8CC6-4E51-91F7-DF99076B12EF}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Statistics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

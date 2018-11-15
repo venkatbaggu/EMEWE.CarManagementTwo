@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="urn:NDPaper.com:I_QM:pd_info_upload" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="SI_pd_info_upload_req" targetNamespace="urn:NDPaper.com:I_QM:pd_info_upload" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_SI_pd_info_upload_req" />
+  <wsdl:types>
+    <xsd:schema xmlns="urn:NDPaper.com:I_QM:pd_info_upload" targetNamespace="urn:NDPaper.com:I_QM:pd_info_upload" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="MT_pd_info_upload_res" type="p1:DT_pd_info_upload_res" />
+      <xsd:element name="MT_pd_info_upload_req" type="p1:DT_pd_info_upload_req" />
+      <xsd:complexType name="DT_pd_info_upload_res">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">1d84b0abc85211e4c8470000007ec552</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ZMMT_CPC_DAT">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">635bb9089c5711e485a54487fc456e87</xsd:appinfo>
+              <xsd:documentation>成品车辆出门数据表</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="BD_NO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb8fb9c5711e4aefd4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>磅单号（成品）</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CARNO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb8fc9c5711e4b7c04487fc456e87</xsd:appinfo>
+                    <xsd:documentation>车号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="PZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb8fd9c5711e49ed64487fc456e87</xsd:appinfo>
+                    <xsd:documentation>皮重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="KC_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7093062e9c6211e4b4fb4487fc456e87</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="KC_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7093062f9c6211e4cef54487fc456e87</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="KC_LOCATION" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb8fe9c5711e4c6a54487fc456e87</xsd:appinfo>
+                    <xsd:documentation>空车过磅地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb8ff9c5711e4b8164487fc456e87</xsd:appinfo>
+                    <xsd:documentation>毛重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MC_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9009c5711e4ca9b4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>类型DATS的字段</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MC_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9019c5711e49d864487fc456e87</xsd:appinfo>
+                    <xsd:documentation>TIMS 类型的字段</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MC_LOCATION" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9029c5711e4cedc4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>过磅地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="JZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9039c5711e4c28b4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>净重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FBZL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9049c5711e4c6b54487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复磅重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FB_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9059c5711e4ce794487fc456e87</xsd:appinfo>
+                    <xsd:documentation>上次更改的日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FB_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9069c5711e4b8224487fc456e87</xsd:appinfo>
+                    <xsd:documentation>上次更改的时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FB_LOCATION" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9079c5711e4c6a94487fc456e87</xsd:appinfo>
+                    <xsd:documentation>创建位置</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FHZL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ad8e24aba78011e4cdac4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>发货重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ZLET_BD_DATE">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">635bb9399c5711e48ebd4487fc456e87</xsd:appinfo>
+              <xsd:documentation>原料过磅数据</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="MANDT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9099c5711e4847a4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>客户端</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BD_NO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb90a9c5711e4c3c84487fc456e87</xsd:appinfo>
+                    <xsd:documentation>磅单号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ITEM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb90b9c5711e4ccc24487fc456e87</xsd:appinfo>
+                    <xsd:documentation>行项目</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CARNO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb90c9c5711e4854b4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>车号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="LICENSE_NUM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb90d9c5711e4bf7c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>牌照号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="DC_NO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb90e9c5711e498364487fc456e87</xsd:appinfo>
+                    <xsd:documentation>派车单号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="INBOUND_HU" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb90f9c5711e48b454487fc456e87</xsd:appinfo>
+                    <xsd:documentation>外部处理单位标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BL_NO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9109c5711e4c24d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>提单号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CHAUFFEUR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9119c5711e4a7a34487fc456e87</xsd:appinfo>
+                    <xsd:documentation>司机</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CHA_NAME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9129c5711e48f594487fc456e87</xsd:appinfo>
+                    <xsd:documentation>司机姓名</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YWLX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9139c5711e498354487fc456e87</xsd:appinfo>
+                    <xsd:documentation>业务类型</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="GBMS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9149c5711e4c82f4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>过磅模式</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="VBELN_VL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306309c6211e4a3aa4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>交货</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="EBELN" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306319c6211e494074487fc456e87</xsd:appinfo>
+                    <xsd:documentation>采购凭证号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BUKRS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306329c6211e490e04487fc456e87</xsd:appinfo>
+                    <xsd:documentation>公司代码</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="EBELP" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306339c6211e4b2fe4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>采购凭证的项目编号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YC_WERKS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306349c6211e4983d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>订单工厂</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="SH_WERKS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306359c6211e4c1bc4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>收货工厂</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="DBCT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306369c6211e49f634487fc456e87</xsd:appinfo>
+                    <xsd:documentation>地磅称台</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="Z_PQTION" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306379c6211e4bb144487fc456e87</xsd:appinfo>
+                    <xsd:documentation>质检类型</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="Z_RCLGORT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709306389c6211e4c5054487fc456e87</xsd:appinfo>
+                    <xsd:documentation>放柜地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YC_LGORT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e669c6211e4c2914487fc456e87</xsd:appinfo>
+                    <xsd:documentation>移出库存地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YC_LGOBE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e679c6211e4cab44487fc456e87</xsd:appinfo>
+                    <xsd:documentation>移出库位描述</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="LGORT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e689c6211e4899e4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>收货库存地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="LGOBE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e699c6211e48a5d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>收货库存地点描述</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="SHDH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e6a9c6211e4877f4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>送货单号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="DJ_W" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e6b9c6211e487de4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>单据重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e6c9c6211e48e604487fc456e87</xsd:appinfo>
+                    <xsd:documentation>门岗</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="F_W" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e6d9c6211e4badf4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第一次称重重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="F_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e6e9c6211e4a90c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第一次称重日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="F_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e6f9c6211e48b974487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第一次称重时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="F_USER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e709c6211e4c3664487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第一次称重人</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="F_BT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e719c6211e4adb34487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第一次地磅称台</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="S_W" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e729c6211e4c7574487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第二次称重重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="S_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e739c6211e4a0104487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第二次称重日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="S_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e749c6211e4a8844487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第二次称重时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="S_USER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e759c6211e48ceb4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第二次过磅人</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="S_BT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e769c6211e4cec94487fc456e87</xsd:appinfo>
+                    <xsd:documentation>第二次过磅称台</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BJZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e779c6211e4b06a4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>司磅净重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="QZZL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e789c6211e4ccec4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>缺重重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="WZ_FLAG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e799c6211e4c28d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>缺重标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="RKBS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e7a9c6211e48d404487fc456e87</xsd:appinfo>
+                    <xsd:documentation>入库核准包数</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="DBFGZL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e7b9c6211e4bfcf4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>单包风干重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZCBZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e7c9c6211e4c3e54487fc456e87</xsd:appinfo>
+                    <xsd:documentation>装车班组</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="XHBZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e7d9c6211e4a65f4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>卸货班组</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FZBZL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e7e9c6211e492574487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复重磅重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FZB_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e7f9c6211e4b55b4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复重磅日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FZB_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e809c6211e4b09d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复重磅时间复重磅时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FBZL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e819c6211e4b1b34487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复磅重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FB_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e829c6211e4ab914487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复磅时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FB_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e839c6211e4cb4b4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复磅日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FB_BT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e849c6211e4afa84487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复磅称台</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FB_USER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e859c6211e4bc174487fc456e87</xsd:appinfo>
+                    <xsd:documentation>复磅人</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZJBZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e869c6211e4b45f4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>质检班组</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZJXX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e879c6211e4a4694487fc456e87</xsd:appinfo>
+                    <xsd:documentation>质检信息</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="KS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e889c6211e498a14487fc456e87</xsd:appinfo>
+                    <xsd:documentation>扣水</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="KZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e899c6211e4b5e24487fc456e87</xsd:appinfo>
+                    <xsd:documentation>扣杂</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="KZZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">70931e8a9c6211e4cb964487fc456e87</xsd:appinfo>
+                    <xsd:documentation>扣杂纸</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BDZT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344d99c6211e4b7274487fc456e87</xsd:appinfo>
+                    <xsd:documentation>磅单状态</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="REF_BD_NO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344da9c6211e4c9c64487fc456e87</xsd:appinfo>
+                    <xsd:documentation>参考磅单号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MOD_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344db9c6211e4bb974487fc456e87</xsd:appinfo>
+                    <xsd:documentation>更改日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MOD_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344dc9c6211e49dfa4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>更改时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MOD_USER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344dd9c6211e48a394487fc456e87</xsd:appinfo>
+                    <xsd:documentation>确认修改人</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BAK" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344de9c6211e4cd7c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>备注</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="DEL_FLAG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344df9c6211e49bf04487fc456e87</xsd:appinfo>
+                    <xsd:documentation>删除标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e09c6211e48b764487fc456e87</xsd:appinfo>
+                    <xsd:documentation>包数</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="DBZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e19c6211e4b5c54487fc456e87</xsd:appinfo>
+                    <xsd:documentation>单包重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZJBS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e29c6211e49d314487fc456e87</xsd:appinfo>
+                    <xsd:documentation>质检包数</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="GLPN" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e39c6211e4c3a74487fc456e87</xsd:appinfo>
+                    <xsd:documentation>过路票张数</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="JE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e49c6211e486c74487fc456e87</xsd:appinfo>
+                    <xsd:documentation>金额</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="XHDD" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e59c6211e4becb4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>卸货地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZY_TYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e69c6211e49a434487fc456e87</xsd:appinfo>
+                    <xsd:documentation>转运类型</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZYWZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e79c6211e48a6d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>转运物资</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZCBS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e89c6211e491b84487fc456e87</xsd:appinfo>
+                    <xsd:documentation>转出包数</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MATNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344e99c6211e482b84487fc456e87</xsd:appinfo>
+                    <xsd:documentation>物料号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YCDWH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344ea9c6211e4aa0e4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>移出剁位号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZDWNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344eb9c6211e4a2d64487fc456e87</xsd:appinfo>
+                    <xsd:documentation>垛位代码</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZRKJZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344ec9c6211e496e34487fc456e87</xsd:appinfo>
+                    <xsd:documentation>入库净重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZGRZT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344ed9c6211e490344487fc456e87</xsd:appinfo>
+                    <xsd:documentation>入库流转状态</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZRMAT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344ee9c6211e49d3e4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>入库物料</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="RBELP" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344ef9c6211e4c00e4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>采购凭证的项目编号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZFLAG_TX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f09c6211e4bb314487fc456e87</xsd:appinfo>
+                    <xsd:documentation>掏箱标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZHW_STATUS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f19c6211e4b19f4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>货物状态</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CONTAINER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f29c6211e488e94487fc456e87</xsd:appinfo>
+                    <xsd:documentation>集装箱号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="SH_LIFNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f39c6211e4c4634487fc456e87</xsd:appinfo>
+                    <xsd:documentation>送货供应商</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YC_ZDWNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f49c6211e4b6774487fc456e87</xsd:appinfo>
+                    <xsd:documentation>移出垛位号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YRDWH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f59c6211e48b8e4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>移入垛位号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZJTNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f69c6211e4ceac4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>基地代码</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="MEINS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f79c6211e48bd74487fc456e87</xsd:appinfo>
+                    <xsd:documentation>基本计量单位</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="PROD_CONF" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f89c6211e49a2c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>线边库未确认标志</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="HGXH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344f99c6211e48ed24487fc456e87</xsd:appinfo>
+                    <xsd:documentation>货柜型号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZCZ_CZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344fa9c6211e48f4c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>车重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZXZ_XZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344fb9c6211e4cf314487fc456e87</xsd:appinfo>
+                    <xsd:documentation>箱重</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZCONF_USER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344fc9c6211e4ae864487fc456e87</xsd:appinfo>
+                    <xsd:documentation>确认人</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZCONF_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709344fd9c6211e49af24487fc456e87</xsd:appinfo>
+                    <xsd:documentation>确认日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZCONF_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7093584f9c6211e4b0fb4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>确认时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZMOD_USER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358509c6211e487404487fc456e87</xsd:appinfo>
+                    <xsd:documentation>确认修改人</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZMOD_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358519c6211e4cb334487fc456e87</xsd:appinfo>
+                    <xsd:documentation>确认修改日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZMOD_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358529c6211e4beef4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>确认修改时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZTXDATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358539c6211e4c3a84487fc456e87</xsd:appinfo>
+                    <xsd:documentation>掏箱日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZTXNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358549c6211e4c7754487fc456e87</xsd:appinfo>
+                    <xsd:documentation>掏箱叉车工</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZHXQK" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358559c6211e4a4804487fc456e87</xsd:appinfo>
+                    <xsd:documentation>坏箱情况</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZSGNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358569c6211e48ed24487fc456e87</xsd:appinfo>
+                    <xsd:documentation>扫柜员</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZYTBZ" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358579c6211e4aee34487fc456e87</xsd:appinfo>
+                    <xsd:documentation>已掏箱标志</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="PRT_FLAG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358589c6211e4cab84487fc456e87</xsd:appinfo>
+                    <xsd:documentation>打印标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="RG_FLAG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709358599c6211e498a74487fc456e87</xsd:appinfo>
+                    <xsd:documentation>退货标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="REF_BDNO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9159c5711e48c594487fc456e87</xsd:appinfo>
+                    <xsd:documentation>参考磅单号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="VBELN" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9169c5711e4ae194487fc456e87</xsd:appinfo>
+                    <xsd:documentation>交货</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZXHDD" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9179c5711e4b3594487fc456e87</xsd:appinfo>
+                    <xsd:documentation>卸货地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZLHDD" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9189c5711e4bbf24487fc456e87</xsd:appinfo>
+                    <xsd:documentation>来货地点</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZJHLX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9199c5711e4b53d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>三废类型</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="POSNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb91a9c5711e4ca434487fc456e87</xsd:appinfo>
+                    <xsd:documentation>交货项目</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="CONTAINER1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb91b9c5711e49a514487fc456e87</xsd:appinfo>
+                    <xsd:documentation>集装箱号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="INBOUND_HU1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb91c9c5711e4916c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>外部处理单位标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="PRT_FLAG2" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb91d9c5711e491d54487fc456e87</xsd:appinfo>
+                    <xsd:documentation>打印标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZTC" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb91e9c5711e486224487fc456e87</xsd:appinfo>
+                    <xsd:documentation>特采标志</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="Z_CAR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb91f9c5711e49bb04487fc456e87</xsd:appinfo>
+                    <xsd:documentation>自有车标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BSTYP" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9209c5711e4b9a64487fc456e87</xsd:appinfo>
+                    <xsd:documentation>货物类型</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZHWLX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9219c5711e4be3c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>货物类型描述</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="STATUS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9229c5711e4aaf74487fc456e87</xsd:appinfo>
+                    <xsd:documentation>特殊柜提示</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BD_TLD" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9239c5711e485fc4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>托利多磅单号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ROUTE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9249c5711e4beaf4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>路线</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="Z_SBCAR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9259c5711e481514487fc456e87</xsd:appinfo>
+                    <xsd:documentation>外协车标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="SH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9269c5711e4c6ce4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>散货标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="BLAND" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9279c5711e4998b4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>地区 (州、省、县)</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZCFLG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9289c5711e480a24487fc456e87</xsd:appinfo>
+                    <xsd:documentation>拆分标志</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ROUTE2" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9299c5711e49ccf4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>路线</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="SPMONEY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb92a9c5711e4b4d74487fc456e87</xsd:appinfo>
+                    <xsd:documentation>索赔金额</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="PJFLAG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb92b9c5711e4b5634487fc456e87</xsd:appinfo>
+                    <xsd:documentation>票据不符标识</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="NOTE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb92c9c5711e4a12c4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>备注</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="VNAME1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb92d9c5711e4902d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>收款厂商</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YSET1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb92e9c5711e4aac44487fc456e87</xsd:appinfo>
+                    <xsd:documentation>批量修改预付金额</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YRSNM1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb92f9c5711e48a1d4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>预留文本</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YRSNM2" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9309c5711e4a44e4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>预留文本2</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="YSET2" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9319c5711e48deb4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>预留标识2</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZYJQZZL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9329c5711e486a84487fc456e87</xsd:appinfo>
+                    <xsd:documentation>预计缺重重量</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZSL_USER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9339c5711e4a9264487fc456e87</xsd:appinfo>
+                    <xsd:documentation>收料员</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZSL_DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9349c5711e49b414487fc456e87</xsd:appinfo>
+                    <xsd:documentation>收料日期</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ZSL_TIME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">635bb9359c5711e48cab4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>收料时间</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" maxOccurs="unbounded" name="ZLETBDSTRU">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">709388669c6211e4b1374487fc456e87</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="YRSDAT" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">635bb9369c5711e4b9274487fc456e87</xsd:appinfo>
+                          <xsd:documentation>过账日期</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element minOccurs="0" maxOccurs="unbounded" name="ZLETBDSTRU_APPEND">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7093ba4b9c6211e4b4b94487fc456e87</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="LOADER_NO" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">635bb9379c5711e4ae9b4487fc456e87</xsd:appinfo>
+                          <xsd:documentation>装车司机工号</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="LOADER_NAME" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">635bb9389c5711e4a66b4487fc456e87</xsd:appinfo>
+                          <xsd:documentation>装车司机姓名</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_pd_info_upload_req">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">28879ae0c85211e4c4c00000007ec552</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="row">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="I_CARNO" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">06e632229c5011e4b6de4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>车号</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="I_VEHICLE_TYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">06e632239c5011e49faa4487fc456e87</xsd:appinfo>
+                    <xsd:documentation>车辆类型</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_pd_info_upload_req">
+    <wsdl:documentation />
+    <wsdl:part name="MT_pd_info_upload_req" element="p1:MT_pd_info_upload_req" />
+  </wsdl:message>
+  <wsdl:message name="MT_pd_info_upload_res">
+    <wsdl:documentation />
+    <wsdl:part name="MT_pd_info_upload_res" element="p1:MT_pd_info_upload_res" />
+  </wsdl:message>
+  <wsdl:portType name="SI_pd_info_upload_req">
+    <wsdl:documentation />
+    <wsdl:operation name="SI_pd_info_upload_req">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_SI_pd_info_upload_req" />
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_pd_info_upload_req" />
+      <wsdl:output message="p1:MT_pd_info_upload_res" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SI_pd_info_upload_reqBinding" type="p1:SI_pd_info_upload_req">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="SI_pd_info_upload_req">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BS_CARSYS_CQ_SI_pd_info_upload_req">
+    <wsdl:port name="HTTP_Port" binding="p1:SI_pd_info_upload_reqBinding">
+      <address location="http://sappwd:80/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_CARSYS_CQ&amp;receiverParty=&amp;receiverService=&amp;interface=SI_pd_info_upload_req&amp;interfaceNamespace=urn%3ANDPaper.com%3AI_QM%3Apd_info_upload" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:SI_pd_info_upload_reqBinding">
+      <address location="https://sappwd/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_CARSYS_CQ&amp;receiverParty=&amp;receiverService=&amp;interface=SI_pd_info_upload_req&amp;interfaceNamespace=urn%3ANDPaper.com%3AI_QM%3Apd_info_upload" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

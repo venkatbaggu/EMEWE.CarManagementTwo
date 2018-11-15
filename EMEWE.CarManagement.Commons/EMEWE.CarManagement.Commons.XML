@@ -1,0 +1,1912 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EMEWE.CarManagement.Commons</name>
+    </assembly>
+    <members>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.PageControl.BindNoRecords(System.Windows.Forms.DataGridView,System.Data.DataSet)">
+            <summary>
+            无数据依然显示表头
+            </summary>
+            <param name="gridView">所要绑定的GridView</param>
+            <param name="ds">所要绑定的数据集</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.PageControl.GetList(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            调用存储过程获取分页数据
+            </summary>
+            <param name="tblName">要显示的表或多个表的连接 </param>
+            <param name="fldName">要显示的字段列表</param>
+            <param name="PageSize">每页条数</param>
+            <param name="PageIndex">当前页</param>
+            <param name="fldSort">排序字段列表或条件</param>
+            <param name="strID">主键</param>
+            <param name="OrderType">排序方法，0为升序，1为降序(如果是多字段排列Sort指代最后一个排序字段的排列顺序(最后一个排序字段不加排序标记)--程序传参如：' SortA Asc,SortB Desc,SortC ') </param>
+            <param name="strWhere">查询条件,不需where</param>
+            <param name="Dist">是否添加查询字段的 DISTINCT 默认0不添加/1添加 </param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.PageControl.ExecuteDataset(System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回DataSet类型的方法,使用存储过程,有参数
+            </summary>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.PageControl.pageSize">
+            <summary>
+            每页显示行数
+            初始化10条
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.PageControl.nMax">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.PageControl.pageCount">
+            <summary>
+            总页数＝总记录数/每页显示行数
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.PageControl.pageCurrent">
+            <summary>
+            当前页号
+            初始化第一页
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.PageControl.dc">
+            <summary>
+            每页条数
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.PageControl.BindBoundControl(System.Windows.Forms.DataGridView,System.String,System.Windows.Forms.ToolStripTextBox,System.Windows.Forms.ToolStripLabel,System.Windows.Forms.ToolStripLabel,System.Windows.Forms.ToolStripComboBox,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Boolean)">
+             <summary>
+             分页处理
+             </summary>
+             <param name="ClickedItemName">当前操作行名，第一次加载时设置为“”</param>
+             <param name="tstbPageCurrent">当前页数</param>
+             <param name="tslPageCount">总页数</param>
+             <param name="tslNMax">总条数</param>
+            <param name="tscbxPageSize">每页显示条数</param>
+             <param name="tblName">要显示的表或多个表的连接 </param>
+             <param name="fldName">要显示的字段列表</param>
+             <param name="fldSort">排序字段列表或条件</param>
+             <param name="strID">主键</param>
+             <param name="OrderType">排序方法，0为升序，1为降序(如果是多字段排列Sort指代最后一个排序字段的排列顺序(最后一个排序字段不加排序标记)--程序传参如：' SortA Asc,SortB Desc,SortC ') </param>
+             <param name="strWhere">查询条件,不需where</param>
+             <param name="Dist">是否添加查询字段的 DISTINCT 默认0不添加/1添加 </param>
+             <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.PageControl.itemClicked(System.String)">
+            <summary>
+            分页菜单事件响应处理
+            </summary>
+            <param name="ClickedItemName">操作行为名</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.PageControl.CalculatePageCount(System.Windows.Forms.ToolStripTextBox,System.Windows.Forms.ToolStripLabel,System.Windows.Forms.ToolStripLabel,System.Windows.Forms.ToolStripComboBox)">
+             <summary>
+             更改每页显示数:如果总条数大于0，则重新计算总页数，当前页为第一页；如果总条数小于或等于0，则设置每页显示条数和当前页为第一页
+             </summary>
+             <param name="tstbPageCurrent">当前页数</param>
+             <param name="tslPageCount">总页数</param>
+             <param name="tslNMax">总条数</param>
+            <param name="tscbxPageSize">每页显示条数</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.PageControl.BindGridView">
+            <summary>
+            绑定gridview控件
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.InitUser">
+            <summary>
+            用户信息加载
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.LoadData">
+            <summary>
+            菜单栏加载数据
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.LogInfoLoad(System.String)">
+            <summary>
+            加载信息
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.SelectShere">
+            <summary>
+            Search
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.btnCheck">
+            <summary>
+            查重方法
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.userContext">
+            <summary>
+            用户权限，添加删除，修改
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.btnUpdate_Click(System.Object,System.EventArgs)">
+            <summary>
+            修改事件
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.btnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            添加事件
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.btnCancle_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消事件
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.btnSearch_Click(System.Object,System.EventArgs)">
+            <summary>
+            搜索任务信息
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.tslSelectAll_Click">
+            <summary>
+            全选
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.tslNotSelect_Click">
+            <summary>
+            取消全选
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.tbtnDelUser_delete">
+             <summary>
+            删除用户信息 
+             </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.UserRole.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRole.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.dictionaryID">
+             <summary>
+             记录字典编号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.expr">
+            <summary>
+            返回一个空的预置皮重
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.page">
+            <summary>
+            实例化分页控件
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.sqlwhere">
+            <summary>
+            存放查询条件
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.DictionaryForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            Load 加载事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.LoadData">
+            <summary>
+            菜单栏加载数据
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.BindDictionaryOther">
+            <summary>
+            绑定所属字典
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            “保存” 按钮的单击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.btnUpdate_Click(System.Object,System.EventArgs)">
+            <summary>
+            “修改” 按钮的单击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.btnEmpty_Click(System.Object,System.EventArgs)">
+            <summary>
+            “清空” 按钮的单击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.Empty">
+            <summary>
+            清空的方法
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.btnDel_Click(System.Object,System.EventArgs)">
+            <summary>
+            “删除” 按钮的单击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.tbtnDelDictionary">
+            <summary>
+            删除选中行数据的方法 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.btnSelect_Click(System.Object,System.EventArgs)">
+            <summary>
+            “搜 索” 按钮的单击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.GetDictionarySeach">
+            <summary>
+            搜索的方法
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.tslNotSelect_Click">
+            <summary>
+            取消全选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.tslSelectAll_Click">
+            <summary>
+            全选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.bdnInfo_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            分页控件事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.tscbxPageSize2_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            选择每页条数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.LogInfoLoad(System.String)">
+            <summary>
+            加载信息
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.DictionaryForm.dgvDictioanry_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            用户双击组件时发生
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.UpLoadFile(System.String,System.String)">
+            <summary>
+            WebClient上传文件至服务器
+            </summary>
+            <param name="fileNameFullPath">要上传的文件（全路径格式）</param>
+            <param name="strUrlDirPath">Web服务器文件夹路径</param>
+            <returns>True/False是否上传成功</returns>
+        </member>
+        <!-- 对于成员“M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.DownLoadFile(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.Copt(System.String,System.String)">
+            <summary>
+            复制图片
+            </summary>
+            <param name="filepath1">原图片路径（全路径)</param>
+            <param name="filepath2">新路径</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.Delete(System.String)">
+            <summary>
+            删除图片
+            </summary>
+            <param name="path">图片路径</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.MoveImage(System.String,System.String)">
+            <summary>
+            移动图片
+            </summary>
+            <param name="path1">原图片路径（全路径)</param>
+            <param name="path2">新路径(完成的路径包括新名称)</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.GetImage(System.String,System.Boolean)">
+            <summary>
+            获取图片名称信息
+            </summary>
+            <param name="doubleMin">图片有效时间</param>
+            <param name="path">路径</param>
+            <param name="isCheck">是否验证有效 true验证  false 不验证</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.GetStrImageFile(System.Boolean)">
+            <summary>
+            获取存放临时图片文件夹名称
+            </summary>
+            <param name="isCheck">登记路径or通行路径 true为通行图片路径 false为登记图片路径</param>
+            <returns>返回信息格式"~/cartwoin1_files/"</returns>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.ImageFile.t">
+            <summary>
+            当前系统时间
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ImageFile.GetTime(System.String)">
+            <summary>
+            得到时间差
+            </summary>
+            <param name="d">需要获取的时间</param>
+            <param name="length">字符长度</param>
+            <returns></returns>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.USERNAME">
+            <summary>
+            登录名
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.USERID">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.NAME">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.message">
+            <summary>
+            温馨提示
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.PositionLED_ID">
+            <summary>
+            LED设置编号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.CarType">
+            <summary>
+            保存设定的通道通行的车辆类型
+            key 通道  value车辆类型
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.IsCancellation">
+            <summary>
+            LED显示状态
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.Driveway_Value">
+            <summary>
+            通道值，刷车卡，人卡，小票后赋值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.Car_Type">
+            <summary>
+            车辆类型
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.CarAttribute">
+            <summary>
+            SAP车辆属性
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.SapNumber">
+            <summary>
+            SAP凭证标识
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.Car_Type_ID">
+            <summary>
+            车辆类型编号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.CarNumber">
+            <summary>
+            车辆标识(不同车辆类型 标识不同)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.CarInfo_ID">
+            <summary>
+            车辆信息编号(车辆信息界面查询详细信息时或修改车辆信息时赋值)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.UpdateCar">
+            <summary>
+            是否修改车辆基本信息
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.listCarPicEffective">
+            <summary>
+            存放过期及多余图片
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.listCarPic">
+            <summary>
+            存放过期图片
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.Serialnumberbool">
+            <summary>
+            进出厂小票识别 (true：进厂)
+            在mainfrom界面跳转页面时赋值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.Serialnumber">
+            <summary>
+            小票号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.SerialnumberICbool">
+            <summary>
+            小票 IC卡标识
+            (true:小票)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.strManagementStrategy_Type">
+            <summary>
+            管控策略类型
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.rboolRelease">
+            <summary>
+            是否能放行标识TRUE:可以放行 FALSE：不能放行
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.intCarInOutInfoRecord_ID">
+            <summary>
+            车辆校验异常放行通行详细记录编号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.strDriveway_Name">
+            <summary>
+            当前校验的通道名称
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.strDriveway_Value">
+            <summary>
+            通道的实际值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.strASP">
+            <summary>
+            ASP标识
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.CarIC">
+            <summary>
+            车卡卡号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.UserIC">
+            <summary>
+            人卡卡号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.CarNO">
+            <summary>
+            车牌号
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.GetInt(System.Object)">
+            <summary>
+            转化换为int类型的数据
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.GetDateTime(System.Object)">
+            <summary>
+            转换为Datetime类型的数据默认值为1900-01-01 00:00:00.000
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.Number(System.Int32)">
+            <summary>
+            自动增长 生成排队号
+            </summary>
+            <param name="number">初始值</param>
+            <returns>返回生成的排队号</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.DigitalMethod(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            设置文本框只能输入数字
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.WriteTextLog(System.String)">
+            <summary>
+            记录测试记事本
+            </summary>
+            <param name="text">信息</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.WriteLogData(System.String,System.String,System.String)">
+            <summary>
+            操作记录到数据库表fh_operateinfo
+            </summary>
+            <param name="operType">操作类型</param>
+            <param name="content">内容</param>
+            <param name="oper_name">操作人</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.EncryptDES(System.String)">
+            <summary>
+            DES加密字符串
+            </summary>
+            <param name="encryptString">待加密的字符串</param>
+            <param name="encryptKey">加密密钥,要求不超过16位</param>
+            <returns>加密成功返回加密后的字符串，失败返回源串</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.DecryptDES(System.String)">
+            <summary>
+            DES解密字符串
+            </summary>
+            <param name="decryptString">待解密的字符串</param>
+            <param name="decryptKey">解密密钥,要求不超过16位,和加密密钥相同</param>
+            <returns>解密成功返回解密后的字符串，失败返源串</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.ChkRepeat(System.String)">
+            <summary>
+            验证该登记车辆是否为重复登记
+            </summary>
+            <param name="carName">车牌号</param>
+            <returns>返回true(重复) or false(不重复)</returns>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.SAP_ID">
+            <summary>
+            SAP登记编号(校验登记成功赋值)
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.GetSAP(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获取SAP验证结构
+            </summary>
+            <param name="strWTD_ID">成品车辆委托单号/送货车辆采购凭证号</param>
+            <param name="strCRFLG">出入标识：F-验证，A-表示到达，I-表示放入，C-表示出场</param>
+            <param name="strZCARNO">车号</param>
+            <param name="SapSerialnumber">小票号</param>
+            <param name="falg">1为设置为修改，2为是否验证</param>
+            <returns>true (成功或无需验证）  false 失败</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.DelivergoodsSendSAP(System.String,System.String,System.String,System.String)">
+            <summary>
+            验证SAP送货车辆是否成功
+            </summary>
+            <param name="strEBELN">采购凭证号</param>
+            <param name="strCRFLG">出入标识：A-表示到达，I-表示放入，C-表示出场</param>
+            <param name="strZCARNO">车号</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.SendSAP(System.String,System.String,System.String,System.String)">
+            <summary>
+            验证SAP成品纸车辆是否成功或无需验证
+            </summary>
+            <param name="strWTD_ID">成品车辆委托单号</param>
+            <param name="strCRFLG">出入标识：A-表示到达，I-表示放入，C-表示出场</param>
+             <param name="strZCARNO">车号</param>
+            <returns>true (成功或无需验证）  false 失败</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.SAPVBLN(System.String,System.String,System.String,System.String)">
+            <summary>
+            验证SAP三废车辆是否成功或无需验证
+            </summary>
+            <param name="strWTD_ID">成品车辆委托单号</param>
+            <param name="strCRFLG">出入标识：A-表示到达，I-表示放入，C-表示出场</param>
+             <param name="strZCARNO">车号</param>
+            <returns>true (成功或无需验证）  false 失败</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.SAPUnusual(System.String,System.String,System.String,System.String)">
+            <summary>
+            信息记录
+            </summary>
+            <param name="strUnusual_Info">异常信息</param>
+            <param name="strSerialnumber">小票号</param>
+            <param name="strCarNumber">车牌号</param>
+            <param name="Unusual_Type">异常类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.AddSAPVBELNInfo(System.String,System.String,System.String,System.Int32,System.Data.DataTable)">
+            <summary>
+            新增SAP三废车辆信息
+            </summary>
+            <param name="VBELN">交货单号</param>
+            <param name="NAME1_C">客户名称</param>
+            <param name="MAKTX">三废物料描述</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.AddWTDIDInfo(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Data.DataTable)">
+            <summary>
+            新增SAP成品车信息
+            </summary>
+            <param name="CARNO">车号</param>
+            <param name="WTD_ID">委托单</param>
+            <param name="O_FLAG">是否开装货通知单</param>
+            <param name="TEL_NUMBER">电话</param>
+            <param name="HG">货高</param>
+            <param name="XZ">限重</param>
+            <param name="KDATB">有效起始日期</param>
+            <param name="KDATE">有效截止日期</param>
+            <param name="NAME1_C">客户名称</param>
+            <param name="NAME1_P">外协车队供应商名称</param>
+            <returns>true成功 flase失败</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.AddPOInfo(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Data.DataTable)">
+            <summary>
+            新增SAP送货车辆信息
+            </summary>
+            <param name="EBELN">PO号</param>
+            <param name="NAME1_P">供应商名称</param>
+            <param name="MAKTX">物料描述</param>
+            <param name="KDATB">有效起始日期</param>
+            <param name="KDATE">有效截止日期</param>
+            <param name="indexRow">选中下标</param>
+            <returns>true成功 flase失败</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.ISSapCheck(System.String,System.String,System.String@)">
+            <summary>
+            验证新单号是否有效[SAP验证]
+            </summary>
+            <param name="sapType">SAP验证类型</param>
+            <param name="strPo">单号</param>
+            <param name="rStr">返回验证信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CommonalityEntity.ADDUnusualRecord(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            添加系统异常记录
+            </summary>
+            <param name="inttype">异常类型编号</param>
+            <param name="type">管控信息异常类型:</param>
+            <param name="strUnusualRecord_Reason">异常描述</param>
+            <param name="strUnusualRecord_Operate">异常记录人</param>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.ReadValue">
+            <summary>
+            登记IC卡读卡器通道值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.PositionName">
+            <summary>
+            门岗名称
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.PositionID">
+            <summary>
+            门岗编号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.HuJiaoNumber">
+            <summary>
+            呼叫准备的车辆数
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.HuJiaoJianGe">
+            <summary>
+            呼叫间隔
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.PosistionValue">
+            <summary>
+            门岗值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.DrivewayValue">
+            <summary>
+            通道值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.DVRIPAddress">
+            <summary>
+            硬盘录像机IP地址
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.DVRPortNumber">
+            <summary>
+            硬盘录像机服务端口号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.DVRUserName">
+            <summary>
+            硬盘录像机用户名
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.DVRPassword">
+            <summary>
+            硬盘录像机密码
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.BaseFile">
+            <summary>
+            获取和设置包含该应用程序的目录的名称。
+            result: X:\xxx\xxx\ (.exe文件所在的目录+"\")
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.SaveFiel">
+            <summary>
+            获取图片服务器地址
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.PLCCom">
+            <summary>
+            PLC串口号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.CardReadComOne">
+            <summary>
+            读卡器1串口号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.CardReadComTwo">
+            <summary>
+            读卡器2串口号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.NTCode">
+            <summary>
+            加密锁识别码
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.ControlPWD">
+            <summary>
+            手动控制密码
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.SystemClass.CaptureJPEGPictureSleep">
+            <summary>
+            拍照延迟时间
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.SystemClass.GetSystemSet(System.String)">
+            <summary>
+            获得系统设置信息: 初始化设置   SystemSet.xml
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.MenuTypeManager.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuTypeManager.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuTypeManager.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuTypeManager.MenuControlType">
+            <summary>
+            绑定菜单类型
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.InitUser">
+            <summary>
+            加载用户
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.InitMenu">
+            <summary>
+            初始化菜单
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.LoadNode(System.Windows.Forms.TreeNodeCollection,System.String)">
+            <summary>
+            递归创建TreeView菜单(模块列表)
+            </summary>
+            <param name="node">子菜单</param>
+            <param name="MtID">子菜单上级ID</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.Menu_ControlType">
+            <summary>
+            绑定菜单类型
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.btn_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+            添加菜单
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.btn_Delete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.MenuInfoManager.btn_Update_Click(System.Object,System.EventArgs)">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="T:EMEWE.CarManagement.Commons.CommonClass.DatagridPrint">
+            
+            <summary> 
+            Summary description for DatagridPrint. 
+            </summary> 
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DatagridPrint.#ctor(System.Data.DataSet)">
+            <summary>
+            构造
+            </summary>
+            <param name="dataGrid"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DatagridPrint.printDocument_EndPrint(System.Object,System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            打印结束事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DatagridPrint.printDocument_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            打印事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DatagridPrint.Print">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DatagridPrint.AddPrintRecord">
+            <summary>
+            记录打印记录
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DatagridPrint.GetCode(System.String)">
+            <summary>
+            生成条码
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.ControlAttributes.BoolControl(System.String,System.String,System.String)">
+            <summary>
+            控件判断
+            </summary>
+            <param name="ControlName">控件名称</param>
+            <param name="FromName">窗体名称</param>
+            <param name="ControlAttribute">控件属性，Visible，Enabled</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.userContext">
+            <summary>
+            用户权限，添加删除，修改
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.InitUser">
+            <summary>
+            加载用户
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.cmbRoleUserDate">
+            <summary>
+            绑定角色
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.LoadData">
+            <summary>
+            菜单栏加载数据
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.LogInfoLoad(System.String)">
+            <summary>
+            加载信息
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.btnModify_Click(System.Object,System.EventArgs)">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.btn_Check_Click(System.Object,System.EventArgs)">
+            <summary>
+            查重
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.selectTJ">
+            <summary>
+            搜索
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.btnSearch_Click(System.Object,System.EventArgs)">
+            条件查询
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.tslNotSelect_Click">
+            <summary>
+            取消全选
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.tslSelectAll_Click">
+            <summary>
+            全选
+            </summary>     
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.tbtnDelUser_delete">
+             <summary>
+            删除用户信息 
+             </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.tscbxPageSize2_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            设置每页显示最大条数事件
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.lb_UserRole_Click(System.Object,System.EventArgs)">
+            <summary>
+            用户权限配置
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.tsl_Role_Click">
+            <summary>
+            权限设置
+            </summary>
+            <param name="?"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.lvwUserList_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标双击事件，获取双击项的信息，提供修改
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserManagement.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EMEWE.CarManagement.Commons.CommonClass.CheckMethod">
+            <summary>
+            该类用于管理策略的验证，方法都是无参数的，每个方法必须填写方法说明，
+            如果需要必须的参数到类CommonProperties存储，在验证过程中异常将异常记录SQL语句记录CheckMethod.listSql,
+            异常信息提示记录CheckMethod.listMessage
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.listSql">
+            <summary>
+            异常SQL记录
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.listMessage">
+            <summary>
+            异常信息提示记录
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.DefaultObj">
+            <summary>
+            方法使用默认值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.AbnormalInformation">
+            <summary>
+            存放异常信息
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.listUnusualRecord">
+             <summary>
+            存放异常记录
+             </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.rboolISCarInformation">
+            <summary>
+            是否显示车辆信息标识
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSmallTicket">
+            <summary>
+            验证车辆凭证有效性
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.IsSmallTicket">
+            <summary>
+            是否打印小票
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSerialNumber">
+            <summary>
+            验证车辆进出凭证(小票)
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.GetSerialNumber">
+            <summary>
+            验证凭证有效性
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.GetSortNumber">
+            <summary>
+            是否排队
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSortNumber">
+            <summary>
+            校验排队号
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkHuJiao">
+            <summary>
+            校验呼叫通行时间是否有效
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkPhoto">
+            <summary>
+            是否拍照
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.GetPhoto">
+            <summary>
+            验证照片有效性
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkCarBlack">
+            <summary>
+            验证车辆是否黑名单
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkStaffBlack">
+            <summary>
+            验证人员是否黑名单
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkCuBlack">
+            <summary>
+            验证公司是否黑名单
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkLevelWaste">
+            <summary>
+            验证是否登记国废等级
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkStaffICNumber">
+            <summary>
+            验证人卡(驾驶员必需有卡和人员信息则进行此验证)
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkCarIcNumber">
+            <summary>
+            车辆进出凭证(IC卡)
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkRepeat">
+            <summary>
+            验证该登记车辆通行策略是否完成
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSongHuo">
+            <summary>
+            验证送货车辆是否输入PO号
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkChengPin">
+            <summary>
+            验证成品车辆是否输入车牌号
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSanFei">
+            <summary>
+            验证三废车辆是否输入交货单号
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSapOflag">
+            <summary>
+            校验送货通知单
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSapFinished">
+            <summary>
+            车辆登记Sap校验(成品车辆进厂校验)
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSapDelivery">
+            <summary>
+            车辆登记Sap校验(送货车辆进厂校验)
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSapWastes">
+            <summary>
+            车辆登记Sap校验(三废车辆进厂校验)
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ChkSongHuoFour">
+            <summary>
+            SAP送货车辆校验43 45
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CameraCheck">
+            <summary>
+            地感校验(调用前，刷卡的时候，
+            需要得到设备管理表中的刷卡通道赋值给
+            CommonalityEntity.Driveway_Value)
+            刷小票的时候，根据小票获取小票对应
+            通行策略的通道值赋值
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.AddCarInOutRecordMethod">
+            添加车辆通行总记录（当表中该车辆的业务已完成 在进出厂需要添加新记录）
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarTypeValidityCheckMethod">
+            <summary>
+            车辆类型有效性校验
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarRegistrationCheckMethod">
+             <summary>
+            车辆登记状态校验
+             </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.DrivewayStrategyCheckMethod">
+            <summary>
+            通行策略校验
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.SmallTicketCheckMethod">
+            <summary>
+            凭证校验
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.QueueCheck">
+            <summary>
+            排队校验
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.TimeMethod(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            开始时间与当前时间差是否大于设置时间 或开始时间与结束时间差是否大于设置时间
+            </summary>
+            <param name="Begin_Time">开始时间</param>
+            <param name="Setup_Time">有效时间值</param>
+            <param name="End_Time">结束时间</param>
+            <param name="rboolTime">TRUE :开始时间与当前时间差是否大于设置时间 FALSE: 开始时间与结束时间差是否大于设置时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarInvoice_EndTimeMethod">
+            <summary>
+            车辆打印发货单到最后出门时间校验、
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarDischargeCargo_EndTimeMethod">
+            <summary>
+            车辆卸货到最后出门时间校验、
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarIn_EndTimeMethod">
+            <summary>
+            车辆进门到最后出门时间校验、
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarDischargeCargo_LoadometerTimeMethod">
+            <summary>
+            车辆从卸货点到地磅时间校验
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarInvoice_LoadometerTimeMethod">
+            <summary>
+            车辆从打印发货单到地磅时间校验、
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarLoadometer_OutTimeMethod">
+            <summary>
+            车辆过磅到最后出门时间校验
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.CarschargeCargo_LoadometerTimeMethod">
+            <summary>
+            车辆从卸货点到地磅时间校验
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.InitUser">
+            <summary>
+            加载用户
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.InitMenu">
+            <summary>
+            初始化菜单
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.add">
+            <summary>
+            查出选中的父级ID
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.addDiGui(System.Windows.Forms.TreeNode)">
+            <summary>
+            递归出所有选中的子级
+            </summary>
+            <param name="tn"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.btnUpdate_Click(System.Object,System.EventArgs)">
+            <summary>
+            确认添加
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.btnUpdateRole">
+            <summary>
+            根据角色ID查数据
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.btnUpdateUser">
+            <summary>
+            根据用户ID查数据
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.UpdateSelectRole(System.Int32)">
+            <summary>
+            遍历一级菜单
+            </summary>
+            <param name="Menu_ID"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.UpdateSelectRoleDiGui(System.Windows.Forms.TreeNode,System.Int32)">
+            <summary>
+            递归出有权限的菜单并选中
+            </summary>
+            <param name="tn"></param>
+            <param name="Menu_ID"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.btnCancle_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消修改
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.UserRoleADD.SelectAll(System.Boolean)">
+            <summary>
+            全选
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.sqlwhere">
+            <summary>
+            存放查询条件
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.LogInfoForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            Load 的加载事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.InitUser">
+            <summary>
+            加载用户
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.LoadData">
+            <summary>
+            菜单栏加载数据
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.btnSearch_Click(System.Object,System.EventArgs)">
+            <summary>
+            “搜 索” 的单击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.GetLogInfoSeach">
+            <summary>
+            搜索的方法
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.tslNotSelect_Click">
+            <summary>
+            取消全选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.tslSelectAll_Click">
+            <summary>
+            全选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.LogInfoLoad(System.String)">
+            <summary>
+            加载信息
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.tscbxPageSize_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            选择每页条数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.bdnInfo_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            分页控件事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.DateTimeBeginISNull">
+            <summary>
+            DataTimePicker控件的文本操作方法
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.txtbeginTime_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            将“DataTiemPicker”控件赋值为null
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.FlrCommon.LogInfoForm.txtbeginTime_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            “DataTiemPicker”控件的键盘事件 KeyPress
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.InitHashtable">
+            <summary>
+            初始化条形码表
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.GetBarCodeWidth(System.String)">
+            <summary>
+            测算条形码长度
+            </summary>
+            <param name="BarCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.Encoder(System.String)">
+            <summary>
+            生成条形码
+            </summary>
+            <param name="sCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.DrawBarCode">
+            <summary>
+            在位图上绘制条形码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.BarCode">
+            <summary>
+            条形码
+            </summary>
+        </member>
+        <member name="P:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.BarCodeText">
+            <summary>
+            条形码文本
+            </summary>
+        </member>
+        <member name="P:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.BarCodeWidth">
+            <summary>
+            条形码宽度
+            </summary>
+        </member>
+        <member name="P:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.IsFoot">
+            <summary>
+            是否显示条形码文本
+            </summary>
+        </member>
+        <member name="P:EMEWE.CarManagement.Commons.CommonClass.MyBarCode.PreviewBarCode">
+            <summary>
+            获取绘制的条形码
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CarIC.CarICNO">
+            <summary>
+            IC卡号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CarIC.Driveway_Name">
+            <summary>
+            通道名称
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CarIC.Driveway_Value">
+            <summary>
+            通道值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CarIC.CarNo">
+            <summary>
+            车牌号
+            </summary>
+        </member>
+        <member name="T:EMEWE.CarManagement.Commons.CommonClass.CheckProperties">
+            <summary>
+            使用该类是实例化，不能用静态方法，有可能要使用多线程进行处理
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckProperties.ce">
+            <summary>
+            管控方案
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CheckProperties.NamespaceAndClass">
+            <summary>
+            命名空间和类
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckProperties.GetMethodsReflect">
+            <summary>
+            获得反射的方法
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckProperties.ExecutionMethod(System.String)">
+             <summary>
+             执行管理策略方法
+             查询语句一般string strSQL = "select * from ManagementStrategy where  ManagementStrategy_CarType_ID= ManagementStrategy_DrivewayStrategy_ID=ManagementStrategy_Type="
+             查询条件：车辆类型编号，通行策略编号，管控策略类型(登记、排队、进厂、出厂)
+             </summary>
+            <param name="strSql">查询SQl语句</param>
+        </member>
+        <member name="T:EMEWE.CarManagement.Commons.CommonClass.CommonEntity">
+            <summary>
+            使用该类保存生成的信息
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.serialNumber">
+            <summary>
+            小票号
+            (选择车辆类型时，根据管控执行小票生成
+            如该车辆类型管控中不需要小票，则不生成 为空“”)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.serTime">
+            <summary>
+            时间(生成小票或者IC卡验证时赋值)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.serCount">
+            <summary>
+            次数(生成小票或者IC验证时赋值)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.icTime">
+            <summary>
+            时间(生成小票或者IC卡验证时赋值)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.icCount">
+            <summary>
+            次数(生成小票或者IC验证时赋值)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.sort_Value">
+            <summary>
+            排队号(初始值为-1)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.isSort">
+            <summary>
+            是否排队true 排队 false 不排队
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.isSerialNumber">
+            <summary>
+            是否需要小票验证
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.carType_ID">
+            <summary>
+            车辆编号(选择车辆类型时，赋值车辆类型编号)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.carType_Value">
+            <summary>
+            车辆类型值(保存车辆信息时赋值，初始值为“”)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.Imagelist">
+            <summary>
+            保存获取到的所有有效的图片名称
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.AllImageList">
+            <summary>
+            保存获取到的所有‘的图片名称
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.isImageList">
+            <summary>
+            是否需要拍照
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.carInfo_Name">
+            <summary>
+            车牌号(保存登记车辆信息时赋值)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.carIsBlack">
+            <summary>
+            车辆是否黑名单(false不是黑名单 true黑名单)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.staffInfo_ID">
+            <summary>
+            驾驶员编号(保存登记车辆信息时赋值，初始值为-1)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.stfIsBlack">
+            <summary>
+            驾驶员是否黑名单(false不是黑名单 true黑名单)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.customerInfo_ID">
+            <summary>
+            公司编号(保存登记车辆信息时赋值，初始值为-1)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.cusIsBlack">
+            <summary>
+            公司是否黑名单(false不是黑名单 true黑名单)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.carInfo_LevelWaste">
+            <summary>
+            验证登记国废等级(国废车辆,保存登记车辆信息时赋值,初始值为"")
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.levelIsWaste">
+            <summary>
+            是否登记国废等级(false没有登记 true登记)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.stfIsICCard">
+            <summary>
+            人员是否有卡，或者卡号是否启动(false 没有卡或者未启动 true 有卡且状态正常)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.carICNumber">
+            <summary>
+            车卡
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.carIC">
+            <summary>
+            false没有验证车卡,true验证车卡
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SAPIID">
+            <summary>
+            SAP记录编号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsSap">
+            <summary>
+            是否通过SAP验证
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsPhoto">
+            <summary>
+            照片验证 true 通行照片验证 false登记照片验证
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsState">
+            <summary>
+            车辆凭证是否有效 false 无效  true 有效
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SapChengPinTable">
+            <summary>
+            SAP成品车辆
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SapChengPinTable2">
+            <summary>
+            SAP成品车辆
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.ChengPinNumber">
+            <summary>
+            SAP成品车辆车牌号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsChengPin">
+            <summary>
+            是否执行成品车辆校验
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SapSongHuoTable">
+            <summary>
+            SAP送货车辆
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SapSongHuoTable2">
+            <summary>
+            SAP送货车辆
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SongHuoNumber">
+            <summary>
+            SAP送货车辆送货单号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsSongHuo">
+            <summary>
+            是否执行送货车辆校验
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SapSangFeiTable">
+            <summary>
+            SAP三废车辆
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SapSangFeiTable2">
+            <summary>
+            SAP三废车辆
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SangFeiNumber">
+            <summary>
+            SAP三废车辆PO号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsSangFei">
+            <summary>
+            是否执行三废车辆校验
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.CarType_Name">
+            <summary>
+            车辆类型名称(SAP校验)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.SapISCheck">
+            <summary>
+            是否有效
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.FourList">
+            <summary>
+            生产物料车的车辆类型
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.ThrList">
+            <summary>
+            国废车辆的车辆类型
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.CarTypeKey">
+            <summary>
+            排队校验的键值
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.sortValue">
+            <summary>
+            当前最小排队号
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsManagerFl">
+            <summary>
+            通行策略是否完成
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsOflag">
+            <summary>
+            是否开装货通知单
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.IsHuJiao">
+            <summary>
+            呼叫校验是否通过(false 未通过  true 通过)
+            </summary>
+        </member>
+        <member name="F:EMEWE.CarManagement.Commons.CommonClass.CommonEntity.CarInfo_ID">
+            <summary>
+            车辆信息编号(通行校验呼叫时间时请先赋值)
+            </summary>
+        </member>
+        <member name="T:EMEWE.CarManagement.Commons.CommonClass.CheckRegex">
+            <summary>
+            正则表达式验证
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexUser(System.String,System.String@)">
+            <summary>
+            验证用户名
+            </summary>
+            <param name="loginId">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexRightNess(System.String)">
+            <summary>
+            验证正整数
+            </summary>
+            <param name="ness">输入的数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexMath(System.String)">
+            <summary>
+            验证数字
+            </summary>
+            <param name="maths"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexEmail(System.String)">
+            <summary>
+            验证邮箱
+            </summary>
+            <param name="email">邮箱编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexPhone(System.String)">
+            <summary>
+            验证座机号码
+            </summary>
+            <param name="phone">座机号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexChinese(System.String)">
+            <summary>
+            验证中文字符
+            </summary>
+            <param name="ch">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexTelePhone(System.String)">
+            <summary>
+            验证手机号码
+            </summary>
+            <param name="telePhone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckRegex.RegexDecelmal(System.String)">
+            <summary>
+            验证小数
+            </summary>
+            <param name="decl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DeviceControlBLL.GetDeviceControl">
+            <summary>
+            根据当前门岗获取设备控制数据
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DeviceControlBLL.FindDeviceControl(System.Collections.Generic.List{EMEWE.CarManagement.Entity.DeviceControl},System.String,System.String,System.String,System.String,System.String,System.Boolean@)">
+            <summary>
+            查找是否已存在设备控制实体
+            </summary>
+            <param name="strDeviceControl_DrivewayAddress">通道物理值</param>
+            <param name="strDeviceControl_PositionValue">门岗值</param>
+            <param name="strDeviceControl_FanValue">地感值</param>
+            <param name="strDeviceControl_ReadValue">读卡器地址码</param>
+            <param name="strDeviceControl_DrivewayValue">通道值</param>
+            <param name="ISFind">False 未找到，true找到数据</param>
+            说明：查询1根据“物理值和门岗值、地感值”，查询2根据“门岗值和读卡器地址码”，查询3根据“物理值和门岗值、通道值”
+            <returns>DeviceControl 找到是有数据的实体，如果未找到则返回空实体</returns>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DeviceControlBLL.AddDeviceControl(System.Collections.Generic.List{EMEWE.CarManagement.Entity.DeviceControl})">
+            <summary>
+            新增设备控制数据
+            说明：每次获取数据前先检查是否有新增的数据并进行新增
+            </summary>
+        </member>
+        <member name="M:EMEWE.CarManagement.Commons.CommonClass.DeviceControlBLL.UpdateDeviceControl(System.Collections.Generic.List{EMEWE.CarManagement.Entity.DeviceControl},System.Func{EMEWE.CarManagement.Entity.DeviceControl,System.Boolean},System.Action{EMEWE.CarManagement.Entity.DeviceControl})">
+            <summary>
+            修改设备控制数据
+            </summary>
+            <param name="pc">查询函数</param>
+            <param name="ap">修改字段函数</param>
+            说明：如果在修改时遇到错误，执行一次新增设备控制数据，再次进行修改操作
+        </member>
+         <member name="M:EMEWE.CarManagement.Commons.CommonClass.CheckMethod.ISQueuingDisorder">
+            <summary>
+            排队无序
+            </summary>
+        </member>
+    </members>
+</doc>

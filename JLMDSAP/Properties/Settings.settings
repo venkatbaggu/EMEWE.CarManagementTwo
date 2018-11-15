@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="JLMDSAP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="JLMDSAP_sappwd_BS_CARSYS_CQ_SI_pd_info_upload_req" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sappwd:80/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_CARSYS_CQ&amp;receiverParty=&amp;receiverService=&amp;interface=SI_pd_info_upload_req&amp;interfaceNamespace=urn%3ANDPaper.com%3AI_QM%3Apd_info_upload</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

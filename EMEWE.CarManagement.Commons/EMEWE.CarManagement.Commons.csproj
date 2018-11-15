@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AB96C28-2048-4203-9F75-C7A220CB4D74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMEWE.CarManagement.Commons</RootNamespace>
+    <AssemblyName>EMEWE.CarManagement.Commons</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EMEWE.Common">
+      <HintPath>..\EMEWE.CarManagementTwo\ProjectDLL\DLL\EMEWE.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.ExcelLite">
+      <HintPath>..\EMEWE.CarManagementTwo\ProjectDLL\DLL\GemBox.ExcelLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\EMEWE.CarManagementTwo\ProjectDLL\DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Shell32">
+      <HintPath>..\EMEWE.CarManagementTwo\ProjectDLL\DLL\Interop.Shell32.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.swPlateRec">
+      <HintPath>..\EMEWE.CarManagementTwo\ProjectDLL\DLL\Interop.swPlateRec.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Szhto">
+      <HintPath>..\EMEWE.CarManagementTwo\ProjectDLL\DLL\Interop.Szhto.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SAPRFCTest, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EMEWE.CarManagementTwo\ProjectDLL\DLL\SAPRFCTest.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPTest, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Speech">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonClass\CarIC.cs" />
+    <Compile Include="CommonClass\CheckRegex.cs" />
+    <Compile Include="CommonClass\Class1.cs" />
+    <Compile Include="CommonClass\CommonalityEntity.cs" />
+    <Compile Include="CommonClass\CheckMethod.cs" />
+    <Compile Include="CommonClass\CheckProperties.cs" />
+    <Compile Include="CommonClass\CommonMethod.cs" />
+    <Compile Include="CommonClass\Controls.cs" />
+    <Compile Include="CommonClass\DatagridPrint.cs" />
+    <Compile Include="CommonClass\DBHelperAccess.cs" />
+    <Compile Include="CommonClass\DeviceControlBLL.cs" />
+    <Compile Include="CommonClass\DrawCode.cs" />
+    <Compile Include="CommonClass\MyBarCode.cs" />
+    <Compile Include="CommonClass\RulesXML.cs" />
+    <Compile Include="CommonClass\SAPClass.cs" />
+    <Compile Include="CommonClass\VoiceReade.cs" />
+    <Compile Include="CommonClass\ZIPPER.cs" />
+    <Compile Include="FlrCommon\DictionaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\DictionaryForm.designer.cs">
+      <DependentUpon>DictionaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\LogInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\LogInfoForm.designer.cs">
+      <DependentUpon>LogInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\MenuInfoManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\MenuInfoManager.Designer.cs">
+      <DependentUpon>MenuInfoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\MenuTypeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\MenuTypeManager.Designer.cs">
+      <DependentUpon>MenuTypeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\SystemConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\SystemConfig.Designer.cs">
+      <DependentUpon>SystemConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\UserPasswordMg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\UserPasswordMg.Designer.cs">
+      <DependentUpon>UserPasswordMg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\UserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\UserRole.Designer.cs">
+      <DependentUpon>UserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlrCommon\UserRoleADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlrCommon\UserRoleADD.Designer.cs">
+      <DependentUpon>UserRoleADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\ImageFile.cs" />
+    <Compile Include="CommonClass\PageControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommonClass\SystemClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FlrCommon\DictionaryForm.resx">
+      <DependentUpon>DictionaryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\LogInfoForm.resx">
+      <DependentUpon>LogInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\MenuInfoManager.resx">
+      <DependentUpon>MenuInfoManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\MenuTypeManager.resx">
+      <DependentUpon>MenuTypeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\SystemConfig.resx">
+      <DependentUpon>SystemConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\UserPasswordMg.resx">
+      <DependentUpon>UserPasswordMg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\UserRole.resx">
+      <DependentUpon>UserRole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlrCommon\UserRoleADD.resx">
+      <DependentUpon>UserRoleADD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMEWE.CarManagement.DAL\EMEWE.CarManagement.DAL.csproj">
+      <Project>{87C89639-4CDF-4B74-B52E-8912BEB08651}</Project>
+      <Name>EMEWE.CarManagement.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EMEWE.CarManagement.Entity\EMEWE.CarManagement.Entity.csproj">
+      <Project>{E848162C-B300-4271-857B-0A0A97376706}</Project>
+      <Name>EMEWE.CarManagement.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JLMDSAP\JLMDSAP.csproj">
+      <Project>{A6B8E85A-8DED-49A4-AB7A-428DB9E45B22}</Project>
+      <Name>JLMDSAP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPBAPIControlLib">
+      <Guid>{DC74637D-DE04-4B3D-9897-CB2BADEF754C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPFunctionsOCX">
+      <Guid>{273D3599-E8A7-4674-A3B7-430B9E0A78BD}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPLogonCtrl">
+      <Guid>{D7206A1D-3F10-412A-9F8B-A99536EE68E7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPTableFactoryCtrl">
+      <Guid>{BA0175F9-8CC6-4E51-91F7-DF99076B12EF}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SpeechLib">
+      <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
